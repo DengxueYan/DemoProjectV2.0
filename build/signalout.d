@@ -1,0 +1,16 @@
+.\build\signalout.o: applications\SignalOut.c
+.\build\signalout.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\string.h
+.\build\signalout.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\build\signalout.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\build\signalout.o: applications\SystemBase.h
+.\build\signalout.o: applications\UserTypesDef.h
+.\build\signalout.o: applications\FileTypesDef.h
+.\build\signalout.o: applications\Debug.h
+.\build\signalout.o: applications\stdio.h
+.\build\signalout.o: applications\TaskServices.h
+.\build\signalout.o: applications\Uart.h
+.\build\signalout.o: applications\STM32F40xRegister.h
+.\build\signalout.o: applications\SignalOut.h
+.\build\signalout.o: applications\BaseData.h
+.\build\signalout.o: applications\UserApp.h
+.\build\signalout.o: applications\DataProcess.h

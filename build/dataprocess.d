@@ -1,0 +1,14 @@
+.\build\dataprocess.o: applications\DataProcess.c
+.\build\dataprocess.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\string.h
+.\build\dataprocess.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\build\dataprocess.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\build\dataprocess.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\math.h
+.\build\dataprocess.o: applications\SystemBase.h
+.\build\dataprocess.o: applications\UserTypesDef.h
+.\build\dataprocess.o: applications\FileTypesDef.h
+.\build\dataprocess.o: applications\Debug.h
+.\build\dataprocess.o: applications\stdio.h
+.\build\dataprocess.o: applications\UserApp.h
+.\build\dataprocess.o: applications\DataProcess.h
+.\build\dataprocess.o: applications\Uart.h
+.\build\dataprocess.o: applications\STM32F40xRegister.h

@@ -1,0 +1,12 @@
+.\build\setting.o: applications\Setting.c
+.\build\setting.o: applications\STM32F40xRegister.h
+.\build\setting.o: applications\UserTypesDef.h
+.\build\setting.o: applications\Debug.h
+.\build\setting.o: applications\stdio.h
+.\build\setting.o: applications\SystemBase.h
+.\build\setting.o: applications\FileTypesDef.h
+.\build\setting.o: applications\Setting.h
+.\build\setting.o: applications\BaseData.h
+.\build\setting.o: applications\Uart.h
+.\build\setting.o: applications\UserApp.h
+.\build\setting.o: applications\DataProcess.h

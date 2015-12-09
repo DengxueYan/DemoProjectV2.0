@@ -1,0 +1,580 @@
+﻿EncodingType: en= cn=GB2312 ot=WINDOWS1251
+<SystemParameter Num=326>
+    language              cn=语言                   en="language"                       ot="language"                       min=0        max=2       unit=     default=0   invisible=0 remark="0:English 1:Chinese 2:Other"
+    uart4_comm_protocol   cn=串口0通讯协议          en="uart 0 comm protocol"           ot="uart 0 comm protocol"           min=0        max=1       unit=     default=1   invisible=0xFFFFFFFF remark="0:IEC103 1:MODBUS"
+    uart4_comm_addr       cn=串口0通讯地址          en="uart 0 comm address"            ot="uart 0 comm address"            min=0        max=65535   unit=     default=1   invisible=0 
+    uart4_rx_timeout_ms   cn=串口0数据接收超时时间  en="uart 0 rx overtime time"        ot="uart 0 rx overtime time"        min=5        max=600000  unit=ms   default=10  invisible=0 
+    uart4_baud_rate       cn=串口0波特率            en="uart 0 baud rate"               ot="uart 0 baud rate"               min=0        max=7       unit=     default=3   invisible=0 remark="0:1200 1:2400 2:4800 3:9600 4:19200 5:38400 6:57600 7:115200"
+    uart4_parity          cn=串口0校验方式          en="uart 0 parity"                  ot="uart 0 parity"                  min=0        max=2       unit=     default=2   invisible=0 remark="0:No 1:Odd 2:Even"
+    uart4_stop_bits       cn=串口0停止位            en="uart 0 stop bits"               ot="uart 0 stop bits"               min=0        max=3       unit=     default=0   invisible=0 remark="0:1 1:0.5 2:2 3:1.5"
+    uart4_comm_mode       cn=串口0通讯方式          en="uart 0 comm mode"               ot="uart 0 comm mode"               min=0        max=1       unit=     default=0   invisible=0xFFFFFFFF remark="0:RS485 1:RS232"
+    uart2_comm_protocol   cn=串口1通讯协议          en="uart 1 comm protocol"           ot="uart 0 comm protocol"           min=0        max=1       unit=     default=1   invisible=0xFFFFFFFF remark="0:IEC103 1:MODBUS"
+    uart2_comm_addr       cn=串口1通讯地址          en="uart 1 comm address"            ot="uart 0 comm address"            min=0        max=65535   unit=     default=1   invisible=0 
+    uart2_rx_timeout_ms   cn=串口1数据接收超时时间  en="uart 1 rx overtime time"        ot="uart 0 rx overtime time"        min=5        max=600000  unit=ms   default=10  invisible=0 
+    uart2_baud_rate       cn=串口1波特率            en="uart 1 baud rate"               ot="uart 0 baud rate"               min=0        max=7       unit=     default=3   invisible=0 remark="0:1200 1:2400 2:4800 3:9600 4:19200 5:38400 6:57600 7:115200"
+    uart2_parity          cn=串口1校验方式          en="uart 1 parity"                  ot="uart 0 parity"                  min=0        max=2       unit=     default=2   invisible=0 remark="0:No 1:Odd 2:Even"
+    uart2_stop_bits       cn=串口1停止位            en="uart 1 stop bits"               ot="uart 0 stop bits"               min=0        max=3       unit=     default=0   invisible=0 remark="0:1 1:0.5 2:2 3:1.5"
+    uart2_comm_mode       cn=串口1通讯方式          en="uart 1 comm mode"               ot="uart 0 comm mode"               min=0        max=1       unit=     default=0   invisible=0 remark="0:RS485 1:RS232"
+
+    measure_delay              cn=测量延时时间           en="measure delay"                         ot="xxxx"                           min=0       max=1440000000 unit=ms       default=0       invisible=0 
+    use_freq_amp_calc_T        cn=使用幅值频率计算温度   en="Calculate temperature use freq amp"    ot="xxxx"                           min=0       max=1          unit=         default=0       invisible=0 
+    fft_amp_filter_enable      cn=使能FFT幅值滤波        en="FFT Amp filter enable"                 ot="xxxx"                           min=0       max=1          unit=         default=1       invisible=0 
+    saw_auto_tx_attenuator_min cn=发送功率自动调节最小值 en="Auto TX Attenuator Min"                ot="xxxx"                           min=0       max=12         unit=         default=10      invisible=0 
+
+    device_offline        cn=装置离线           en="device offline"                 ot="xxxx"      min=0     max=1   unit=       default=0       invisible=0 
+
+    antenna0_offline      cn=天线0不在线        en="antenna0 offline"               ot="xxxx"      min=0     max=1   unit=       default=0       invisible=0 
+    antenna1_offline      cn=天线1不在线        en="antenna1 offline"               ot="xxxx"      min=0     max=1   unit=       default=1       invisible=0 
+    antenna2_offline      cn=天线2不在线        en="antenna2 offline"               ot="xxxx"      min=0     max=1   unit=       default=1       invisible=0 
+    antenna3_offline      cn=天线3不在线        en="antenna3 offline"               ot="xxxx"      min=0     max=1   unit=       default=1       invisible=0 
+    antenna4_offline      cn=天线4不在线        en="antenna4 offline"               ot="xxxx"      min=0     max=1   unit=       default=1       invisible=0 
+    antenna5_offline      cn=天线5不在线        en="antenna5 offline"               ot="xxxx"      min=0     max=1   unit=       default=1       invisible=0 
+
+    antenna0_saw_delay_from_tx               cn=天线0发送至接收的延时         en="antenna0 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna0_saw_send_hold_time              cn=天线0发送时间                 en="antenna0 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna0_sensor0_offline                 cn=天线0传感器0不在线            en="antenna0 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor0_calibrate_T             cn=天线0传感器0校准温度          en="antenna0 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna0_sensor0_rtx_power_autoadjust    cn=天线0传感器0功率自动调节      en="antenna0 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor0_tx_attenuator           cn=天线0传感器0发送衰减          en="antenna0 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor0_rx_attenuator           cn=天线0传感器0接收衰减          en="antenna0 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor0_start_freq_tab_index    cn=天线0传感器0起始频率表索引    en="antenna0 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna0_sensor0_end_freq_tab_index      cn=天线0传感器0终止频率表索引    en="antenna0 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna0_sensor0_slope_T                 cn=天线0传感器0斜率              en="antenna0 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna0_sensor1_offline                 cn=天线0传感器1不在线            en="antenna0 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor1_calibrate_T             cn=天线0传感器1校准温度          en="antenna0 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna0_sensor1_rtx_power_autoadjust    cn=天线0传感器1功率自动调节      en="antenna0 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor1_tx_attenuator           cn=天线0传感器1发送衰减          en="antenna0 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor1_rx_attenuator           cn=天线0传感器1接收衰减          en="antenna0 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor1_start_freq_tab_index    cn=天线0传感器1起始频率表索引    en="antenna0 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna0_sensor1_end_freq_tab_index      cn=天线0传感器1终止频率表索引    en="antenna0 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna0_sensor1_slope_T                 cn=天线0传感器1斜率              en="antenna0 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna0_sensor2_offline                 cn=天线0传感器2不在线            en="antenna0 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor2_calibrate_T             cn=天线0传感器2校准温度          en="antenna0 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna0_sensor2_rtx_power_autoadjust    cn=天线0传感器2功率自动调节      en="antenna0 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor2_tx_attenuator           cn=天线0传感器2发送衰减          en="antenna0 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor2_rx_attenuator           cn=天线0传感器2接收衰减          en="antenna0 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor2_start_freq_tab_index    cn=天线0传感器2起始频率表索引    en="antenna0 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna0_sensor2_end_freq_tab_index      cn=天线0传感器2终止频率表索引    en="antenna0 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna0_sensor2_slope_T                 cn=天线0传感器2斜率              en="antenna0 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna0_sensor3_offline                 cn=天线0传感器3不在线            en="antenna0 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor3_calibrate_T             cn=天线0传感器3校准温度          en="antenna0 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna0_sensor3_rtx_power_autoadjust    cn=天线0传感器3功率自动调节      en="antenna0 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor3_tx_attenuator           cn=天线0传感器3发送衰减          en="antenna0 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor3_rx_attenuator           cn=天线0传感器3接收衰减          en="antenna0 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor3_start_freq_tab_index    cn=天线0传感器3起始频率表索引    en="antenna0 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna0_sensor3_end_freq_tab_index      cn=天线0传感器3终止频率表索引    en="antenna0 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna0_sensor3_slope_T                 cn=天线0传感器3斜率              en="antenna0 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna0_sensor4_offline                 cn=天线0传感器4不在线            en="antenna0 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor4_calibrate_T             cn=天线0传感器4校准温度          en="antenna0 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna0_sensor4_rtx_power_autoadjust    cn=天线0传感器4功率自动调节      en="antenna0 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor4_tx_attenuator           cn=天线0传感器4发送衰减          en="antenna0 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor4_rx_attenuator           cn=天线0传感器4接收衰减          en="antenna0 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor4_start_freq_tab_index    cn=天线0传感器4起始频率表索引    en="antenna0 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna0_sensor4_end_freq_tab_index      cn=天线0传感器4终止频率表索引    en="antenna0 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna0_sensor4_slope_T                 cn=天线0传感器4斜率              en="antenna0 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna0_sensor5_offline                 cn=天线0传感器5不在线            en="antenna0 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna0_sensor5_calibrate_T             cn=天线0传感器5校准温度          en="antenna0 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna0_sensor5_rtx_power_autoadjust    cn=天线0传感器5功率自动调节      en="antenna0 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna0_sensor5_tx_attenuator           cn=天线0传感器5发送衰减          en="antenna0 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna0_sensor5_rx_attenuator           cn=天线0传感器5接收衰减          en="antenna0 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna0_sensor5_start_freq_tab_index    cn=天线0传感器5起始频率表索引    en="antenna0 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna0_sensor5_end_freq_tab_index      cn=天线0传感器5终止频率表索引    en="antenna0 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna0_sensor5_slope_T                 cn=天线0传感器5斜率              en="antenna0 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+                                                                                                                                                                    
+    antenna1_saw_delay_from_tx               cn=天线1发送至接收的延时         en="antenna1 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna1_saw_send_hold_time              cn=天线1发送时间                 en="antenna1 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna1_sensor0_offline                 cn=天线1传感器0不在线            en="antenna1 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor0_calibrate_T             cn=天线1传感器0校准温度          en="antenna1 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna1_sensor0_rtx_power_autoadjust    cn=天线1传感器0功率自动调节      en="antenna1 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor0_tx_attenuator           cn=天线1传感器0发送衰减          en="antenna1 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor0_rx_attenuator           cn=天线1传感器0接收衰减          en="antenna1 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor0_start_freq_tab_index    cn=天线1传感器0起始频率表索引    en="antenna1 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna1_sensor0_end_freq_tab_index      cn=天线1传感器0终止频率表索引    en="antenna1 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna1_sensor0_slope_T                 cn=天线1传感器0斜率              en="antenna1 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna1_sensor1_offline                 cn=天线1传感器1不在线            en="antenna1 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor1_calibrate_T             cn=天线1传感器1校准温度          en="antenna1 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna1_sensor1_rtx_power_autoadjust    cn=天线1传感器1功率自动调节      en="antenna1 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor1_tx_attenuator           cn=天线1传感器1发送衰减          en="antenna1 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor1_rx_attenuator           cn=天线1传感器1接收衰减          en="antenna1 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor1_start_freq_tab_index    cn=天线1传感器1起始频率表索引    en="antenna1 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna1_sensor1_end_freq_tab_index      cn=天线1传感器1终止频率表索引    en="antenna1 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna1_sensor1_slope_T                 cn=天线1传感器1斜率              en="antenna1 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna1_sensor2_offline                 cn=天线1传感器2不在线            en="antenna1 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor2_calibrate_T             cn=天线1传感器2校准温度          en="antenna1 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna1_sensor2_rtx_power_autoadjust    cn=天线1传感器2功率自动调节      en="antenna1 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor2_tx_attenuator           cn=天线1传感器2发送衰减          en="antenna1 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor2_rx_attenuator           cn=天线1传感器2接收衰减          en="antenna1 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor2_start_freq_tab_index    cn=天线1传感器2起始频率表索引    en="antenna1 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna1_sensor2_end_freq_tab_index      cn=天线1传感器2终止频率表索引    en="antenna1 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna1_sensor2_slope_T                 cn=天线1传感器2斜率              en="antenna1 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna1_sensor3_offline                 cn=天线1传感器3不在线            en="antenna1 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor3_calibrate_T             cn=天线1传感器3校准温度          en="antenna1 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna1_sensor3_rtx_power_autoadjust    cn=天线1传感器3功率自动调节      en="antenna1 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor3_tx_attenuator           cn=天线1传感器3发送衰减          en="antenna1 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor3_rx_attenuator           cn=天线1传感器3接收衰减          en="antenna1 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor3_start_freq_tab_index    cn=天线1传感器3起始频率表索引    en="antenna1 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna1_sensor3_end_freq_tab_index      cn=天线1传感器3终止频率表索引    en="antenna1 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna1_sensor3_slope_T                 cn=天线1传感器3斜率              en="antenna1 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna1_sensor4_offline                 cn=天线1传感器4不在线            en="antenna1 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor4_calibrate_T             cn=天线1传感器4校准温度          en="antenna1 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna1_sensor4_rtx_power_autoadjust    cn=天线1传感器4功率自动调节      en="antenna1 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor4_tx_attenuator           cn=天线1传感器4发送衰减          en="antenna1 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor4_rx_attenuator           cn=天线1传感器4接收衰减          en="antenna1 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor4_start_freq_tab_index    cn=天线1传感器4起始频率表索引    en="antenna1 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna1_sensor4_end_freq_tab_index      cn=天线1传感器4终止频率表索引    en="antenna1 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna1_sensor4_slope_T                 cn=天线1传感器4斜率              en="antenna1 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna1_sensor5_offline                 cn=天线1传感器5不在线            en="antenna1 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna1_sensor5_calibrate_T             cn=天线1传感器5校准温度          en="antenna1 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna1_sensor5_rtx_power_autoadjust    cn=天线1传感器5功率自动调节      en="antenna1 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna1_sensor5_tx_attenuator           cn=天线1传感器5发送衰减          en="antenna1 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna1_sensor5_rx_attenuator           cn=天线1传感器5接收衰减          en="antenna1 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna1_sensor5_start_freq_tab_index    cn=天线1传感器5起始频率表索引    en="antenna1 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna1_sensor5_end_freq_tab_index      cn=天线1传感器5终止频率表索引    en="antenna1 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna1_sensor5_slope_T                 cn=天线1传感器5斜率              en="antenna1 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+                                                                                                                                                                     
+    antenna2_saw_delay_from_tx               cn=天线2发送至接收的延时         en="antenna2 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna2_saw_send_hold_time              cn=天线2发送时间                 en="antenna2 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna2_sensor0_offline                 cn=天线2传感器0不在线            en="antenna2 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor0_calibrate_T             cn=天线2传感器0校准温度          en="antenna2 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna2_sensor0_rtx_power_autoadjust    cn=天线2传感器0功率自动调节      en="antenna2 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor0_tx_attenuator           cn=天线2传感器0发送衰减          en="antenna2 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor0_rx_attenuator           cn=天线2传感器0接收衰减          en="antenna2 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor0_start_freq_tab_index    cn=天线2传感器0起始频率表索引    en="antenna2 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna2_sensor0_end_freq_tab_index      cn=天线2传感器0终止频率表索引    en="antenna2 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna2_sensor0_slope_T                 cn=天线2传感器0斜率              en="antenna2 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna2_sensor1_offline                 cn=天线2传感器1不在线            en="antenna2 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor1_calibrate_T             cn=天线2传感器1校准温度          en="antenna2 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna2_sensor1_rtx_power_autoadjust    cn=天线2传感器1功率自动调节      en="antenna2 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor1_tx_attenuator           cn=天线2传感器1发送衰减          en="antenna2 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor1_rx_attenuator           cn=天线2传感器1接收衰减          en="antenna2 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor1_start_freq_tab_index    cn=天线2传感器1起始频率表索引    en="antenna2 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna2_sensor1_end_freq_tab_index      cn=天线2传感器1终止频率表索引    en="antenna2 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna2_sensor1_slope_T                 cn=天线2传感器1斜率              en="antenna2 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna2_sensor2_offline                 cn=天线2传感器2不在线            en="antenna2 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor2_calibrate_T             cn=天线2传感器2校准温度          en="antenna2 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna2_sensor2_rtx_power_autoadjust    cn=天线2传感器2功率自动调节      en="antenna2 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor2_tx_attenuator           cn=天线2传感器2发送衰减          en="antenna2 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor2_rx_attenuator           cn=天线2传感器2接收衰减          en="antenna2 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor2_start_freq_tab_index    cn=天线2传感器2起始频率表索引    en="antenna2 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna2_sensor2_end_freq_tab_index      cn=天线2传感器2终止频率表索引    en="antenna2 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna2_sensor2_slope_T                 cn=天线2传感器2斜率              en="antenna2 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna2_sensor3_offline                 cn=天线2传感器3不在线            en="antenna2 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor3_calibrate_T             cn=天线2传感器3校准温度          en="antenna2 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna2_sensor3_rtx_power_autoadjust    cn=天线2传感器3功率自动调节      en="antenna2 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor3_tx_attenuator           cn=天线2传感器3发送衰减          en="antenna2 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor3_rx_attenuator           cn=天线2传感器3接收衰减          en="antenna2 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor3_start_freq_tab_index    cn=天线2传感器3起始频率表索引    en="antenna2 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna2_sensor3_end_freq_tab_index      cn=天线2传感器3终止频率表索引    en="antenna2 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna2_sensor3_slope_T                 cn=天线2传感器3斜率              en="antenna2 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna2_sensor4_offline                 cn=天线2传感器4不在线            en="antenna2 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor4_calibrate_T             cn=天线2传感器4校准温度          en="antenna2 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna2_sensor4_rtx_power_autoadjust    cn=天线2传感器4功率自动调节      en="antenna2 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor4_tx_attenuator           cn=天线2传感器4发送衰减          en="antenna2 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor4_rx_attenuator           cn=天线2传感器4接收衰减          en="antenna2 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor4_start_freq_tab_index    cn=天线2传感器4起始频率表索引    en="antenna2 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna2_sensor4_end_freq_tab_index      cn=天线2传感器4终止频率表索引    en="antenna2 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna2_sensor4_slope_T                 cn=天线2传感器4斜率              en="antenna2 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna2_sensor5_offline                 cn=天线2传感器5不在线            en="antenna2 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna2_sensor5_calibrate_T             cn=天线2传感器5校准温度          en="antenna2 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna2_sensor5_rtx_power_autoadjust    cn=天线2传感器5功率自动调节      en="antenna2 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna2_sensor5_tx_attenuator           cn=天线2传感器5发送衰减          en="antenna2 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna2_sensor5_rx_attenuator           cn=天线2传感器5接收衰减          en="antenna2 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna2_sensor5_start_freq_tab_index    cn=天线2传感器5起始频率表索引    en="antenna2 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna2_sensor5_end_freq_tab_index      cn=天线2传感器5终止频率表索引    en="antenna2 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna2_sensor5_slope_T                 cn=天线2传感器5斜率              en="antenna2 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+                                                                                                                                                                    
+    antenna3_saw_delay_from_tx               cn=天线3发送至接收的延时         en="antenna3 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna3_saw_send_hold_time              cn=天线3发送时间                 en="antenna3 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna3_sensor0_offline                 cn=天线3传感器0不在线            en="antenna3 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor0_calibrate_T             cn=天线3传感器0校准温度          en="antenna3 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna3_sensor0_rtx_power_autoadjust    cn=天线3传感器0功率自动调节      en="antenna3 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor0_tx_attenuator           cn=天线3传感器0发送衰减          en="antenna3 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor0_rx_attenuator           cn=天线3传感器0接收衰减          en="antenna3 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor0_start_freq_tab_index    cn=天线3传感器0起始频率表索引    en="antenna3 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna3_sensor0_end_freq_tab_index      cn=天线3传感器0终止频率表索引    en="antenna3 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna3_sensor0_slope_T                 cn=天线3传感器0斜率              en="antenna3 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna3_sensor1_offline                 cn=天线3传感器1不在线            en="antenna3 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor1_calibrate_T             cn=天线3传感器1校准温度          en="antenna3 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna3_sensor1_rtx_power_autoadjust    cn=天线3传感器1功率自动调节      en="antenna3 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor1_tx_attenuator           cn=天线3传感器1发送衰减          en="antenna3 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor1_rx_attenuator           cn=天线3传感器1接收衰减          en="antenna3 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor1_start_freq_tab_index    cn=天线3传感器1起始频率表索引    en="antenna3 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna3_sensor1_end_freq_tab_index      cn=天线3传感器1终止频率表索引    en="antenna3 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna3_sensor1_slope_T                 cn=天线3传感器1斜率              en="antenna3 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna3_sensor2_offline                 cn=天线3传感器2不在线            en="antenna3 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor2_calibrate_T             cn=天线3传感器2校准温度          en="antenna3 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna3_sensor2_rtx_power_autoadjust    cn=天线3传感器2功率自动调节      en="antenna3 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor2_tx_attenuator           cn=天线3传感器2发送衰减          en="antenna3 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor2_rx_attenuator           cn=天线3传感器2接收衰减          en="antenna3 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor2_start_freq_tab_index    cn=天线3传感器2起始频率表索引    en="antenna3 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna3_sensor2_end_freq_tab_index      cn=天线3传感器2终止频率表索引    en="antenna3 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna3_sensor2_slope_T                 cn=天线3传感器2斜率              en="antenna3 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna3_sensor3_offline                 cn=天线3传感器3不在线            en="antenna3 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor3_calibrate_T             cn=天线3传感器3校准温度          en="antenna3 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna3_sensor3_rtx_power_autoadjust    cn=天线3传感器3功率自动调节      en="antenna3 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor3_tx_attenuator           cn=天线3传感器3发送衰减          en="antenna3 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor3_rx_attenuator           cn=天线3传感器3接收衰减          en="antenna3 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor3_start_freq_tab_index    cn=天线3传感器3起始频率表索引    en="antenna3 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna3_sensor3_end_freq_tab_index      cn=天线3传感器3终止频率表索引    en="antenna3 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna3_sensor3_slope_T                 cn=天线3传感器3斜率              en="antenna3 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna3_sensor4_offline                 cn=天线3传感器4不在线            en="antenna3 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor4_calibrate_T             cn=天线3传感器4校准温度          en="antenna3 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna3_sensor4_rtx_power_autoadjust    cn=天线3传感器4功率自动调节      en="antenna3 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor4_tx_attenuator           cn=天线3传感器4发送衰减          en="antenna3 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor4_rx_attenuator           cn=天线3传感器4接收衰减          en="antenna3 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor4_start_freq_tab_index    cn=天线3传感器4起始频率表索引    en="antenna3 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna3_sensor4_end_freq_tab_index      cn=天线3传感器4终止频率表索引    en="antenna3 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna3_sensor4_slope_T                 cn=天线3传感器4斜率              en="antenna3 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna3_sensor5_offline                 cn=天线3传感器5不在线            en="antenna3 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna3_sensor5_calibrate_T             cn=天线3传感器5校准温度          en="antenna3 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna3_sensor5_rtx_power_autoadjust    cn=天线3传感器5功率自动调节      en="antenna3 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna3_sensor5_tx_attenuator           cn=天线3传感器5发送衰减          en="antenna3 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna3_sensor5_rx_attenuator           cn=天线3传感器5接收衰减          en="antenna3 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna3_sensor5_start_freq_tab_index    cn=天线3传感器5起始频率表索引    en="antenna3 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna3_sensor5_end_freq_tab_index      cn=天线3传感器5终止频率表索引    en="antenna3 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna3_sensor5_slope_T                 cn=天线3传感器5斜率              en="antenna3 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+
+    antenna4_saw_delay_from_tx               cn=天线4发送至接收的延时         en="antenna4 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna4_saw_send_hold_time              cn=天线4发送时间                 en="antenna4 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna4_sensor0_offline                 cn=天线4传感器0不在线            en="antenna4 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor0_calibrate_T             cn=天线4传感器0校准温度          en="antenna4 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna4_sensor0_rtx_power_autoadjust    cn=天线4传感器0功率自动调节      en="antenna4 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor0_tx_attenuator           cn=天线4传感器0发送衰减          en="antenna4 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor0_rx_attenuator           cn=天线4传感器0接收衰减          en="antenna4 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor0_start_freq_tab_index    cn=天线4传感器0起始频率表索引    en="antenna4 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna4_sensor0_end_freq_tab_index      cn=天线4传感器0终止频率表索引    en="antenna4 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna4_sensor0_slope_T                 cn=天线4传感器0斜率              en="antenna4 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna4_sensor1_offline                 cn=天线4传感器1不在线            en="antenna4 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor1_calibrate_T             cn=天线4传感器1校准温度          en="antenna4 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna4_sensor1_rtx_power_autoadjust    cn=天线4传感器1功率自动调节      en="antenna4 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor1_tx_attenuator           cn=天线4传感器1发送衰减          en="antenna4 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor1_rx_attenuator           cn=天线4传感器1接收衰减          en="antenna4 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor1_start_freq_tab_index    cn=天线4传感器1起始频率表索引    en="antenna4 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna4_sensor1_end_freq_tab_index      cn=天线4传感器1终止频率表索引    en="antenna4 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna4_sensor1_slope_T                 cn=天线4传感器1斜率              en="antenna4 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna4_sensor2_offline                 cn=天线4传感器2不在线            en="antenna4 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor2_calibrate_T             cn=天线4传感器2校准温度          en="antenna4 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna4_sensor2_rtx_power_autoadjust    cn=天线4传感器2功率自动调节      en="antenna4 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor2_tx_attenuator           cn=天线4传感器2发送衰减          en="antenna4 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor2_rx_attenuator           cn=天线4传感器2接收衰减          en="antenna4 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor2_start_freq_tab_index    cn=天线4传感器2起始频率表索引    en="antenna4 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna4_sensor2_end_freq_tab_index      cn=天线4传感器2终止频率表索引    en="antenna4 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna4_sensor2_slope_T                 cn=天线4传感器2斜率              en="antenna4 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna4_sensor3_offline                 cn=天线4传感器3不在线            en="antenna4 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor3_calibrate_T             cn=天线4传感器3校准温度          en="antenna4 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna4_sensor3_rtx_power_autoadjust    cn=天线4传感器3功率自动调节      en="antenna4 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor3_tx_attenuator           cn=天线4传感器3发送衰减          en="antenna4 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor3_rx_attenuator           cn=天线4传感器3接收衰减          en="antenna4 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor3_start_freq_tab_index    cn=天线4传感器3起始频率表索引    en="antenna4 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna4_sensor3_end_freq_tab_index      cn=天线4传感器3终止频率表索引    en="antenna4 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna4_sensor3_slope_T                 cn=天线4传感器3斜率              en="antenna4 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna4_sensor4_offline                 cn=天线4传感器4不在线            en="antenna4 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor4_calibrate_T             cn=天线4传感器4校准温度          en="antenna4 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna4_sensor4_rtx_power_autoadjust    cn=天线4传感器4功率自动调节      en="antenna4 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor4_tx_attenuator           cn=天线4传感器4发送衰减          en="antenna4 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor4_rx_attenuator           cn=天线4传感器4接收衰减          en="antenna4 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor4_start_freq_tab_index    cn=天线4传感器4起始频率表索引    en="antenna4 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna4_sensor4_end_freq_tab_index      cn=天线4传感器4终止频率表索引    en="antenna4 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna4_sensor4_slope_T                 cn=天线4传感器4斜率              en="antenna4 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna4_sensor5_offline                 cn=天线4传感器5不在线            en="antenna4 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna4_sensor5_calibrate_T             cn=天线4传感器5校准温度          en="antenna4 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna4_sensor5_rtx_power_autoadjust    cn=天线4传感器5功率自动调节      en="antenna4 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna4_sensor5_tx_attenuator           cn=天线4传感器5发送衰减          en="antenna4 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna4_sensor5_rx_attenuator           cn=天线4传感器5接收衰减          en="antenna4 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna4_sensor5_start_freq_tab_index    cn=天线4传感器5起始频率表索引    en="antenna4 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna4_sensor5_end_freq_tab_index      cn=天线4传感器5终止频率表索引    en="antenna4 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna4_sensor5_slope_T                 cn=天线4传感器5斜率              en="antenna4 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+
+    antenna5_saw_delay_from_tx               cn=天线5发送至接收的延时         en="antenna5 delay from tx to rx"               ot="xxxx"      min=0     max=2000     unit=10ns default=250     invisible=0
+    antenna5_saw_send_hold_time              cn=天线5发送时间                 en="antenna5 send hold time"                    ot="xxxx"      min=500   max=200000   unit=10ns default=5000    invisible=0 
+    antenna5_sensor0_offline                 cn=天线5传感器0不在线            en="antenna5 sensor0 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor0_calibrate_T             cn=天线5传感器0校准温度          en="antenna5 sensor0 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna5_sensor0_rtx_power_autoadjust    cn=天线5传感器0功率自动调节      en="antenna5 sensor0 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor0_tx_attenuator           cn=天线5传感器0发送衰减          en="antenna5 sensor0 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor0_rx_attenuator           cn=天线5传感器0接收衰减          en="antenna5 sensor0 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor0_start_freq_tab_index    cn=天线5传感器0起始频率表索引    en="antenna5 sensor0 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=17700   invisible=0 
+    antenna5_sensor0_end_freq_tab_index      cn=天线5传感器0终止频率表索引    en="antenna5 sensor0 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna5_sensor0_slope_T                 cn=天线5传感器0斜率              en="antenna5 sensor0 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna5_sensor1_offline                 cn=天线5传感器1不在线            en="antenna5 sensor1 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor1_calibrate_T             cn=天线5传感器1校准温度          en="antenna5 sensor1 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0 
+    antenna5_sensor1_rtx_power_autoadjust    cn=天线5传感器1功率自动调节      en="antenna5 sensor1 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor1_tx_attenuator           cn=天线5传感器1发送衰减          en="antenna5 sensor1 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor1_rx_attenuator           cn=天线5传感器1接收衰减          en="antenna5 sensor1 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor1_start_freq_tab_index    cn=天线5传感器1起始频率表索引    en="antenna5 sensor1 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=20500   invisible=0 
+    antenna5_sensor1_end_freq_tab_index      cn=天线5传感器1终止频率表索引    en="antenna5 sensor1 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna5_sensor1_slope_T                 cn=天线5传感器1斜率              en="antenna5 sensor1 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna5_sensor2_offline                 cn=天线5传感器2不在线            en="antenna5 sensor2 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor2_calibrate_T             cn=天线5传感器2校准温度          en="antenna5 sensor2 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna5_sensor2_rtx_power_autoadjust    cn=天线5传感器2功率自动调节      en="antenna5 sensor2 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor2_tx_attenuator           cn=天线5传感器2发送衰减          en="antenna5 sensor2 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor2_rx_attenuator           cn=天线5传感器2接收衰减          en="antenna5 sensor2 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor2_start_freq_tab_index    cn=天线5传感器2起始频率表索引    en="antenna5 sensor2 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=23300   invisible=0 
+    antenna5_sensor2_end_freq_tab_index      cn=天线5传感器2终止频率表索引    en="antenna5 sensor2 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna5_sensor2_slope_T                 cn=天线5传感器2斜率              en="antenna5 sensor2 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna5_sensor3_offline                 cn=天线5传感器3不在线            en="antenna5 sensor3 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor3_calibrate_T             cn=天线5传感器3校准温度          en="antenna5 sensor3 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna5_sensor3_rtx_power_autoadjust    cn=天线5传感器3功率自动调节      en="antenna5 sensor3 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor3_tx_attenuator           cn=天线5传感器3发送衰减          en="antenna5 sensor3 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor3_rx_attenuator           cn=天线5传感器3接收衰减          en="antenna5 sensor3 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor3_start_freq_tab_index    cn=天线5传感器3起始频率表索引    en="antenna5 sensor3 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=26100   invisible=0 
+    antenna5_sensor3_end_freq_tab_index      cn=天线5传感器3终止频率表索引    en="antenna5 sensor3 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna5_sensor3_slope_T                 cn=天线5传感器3斜率              en="antenna5 sensor3 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna5_sensor4_offline                 cn=天线5传感器4不在线            en="antenna5 sensor4 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor4_calibrate_T             cn=天线5传感器4校准温度          en="antenna5 sensor4 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna5_sensor4_rtx_power_autoadjust    cn=天线5传感器4功率自动调节      en="antenna5 sensor4 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor4_tx_attenuator           cn=天线5传感器4发送衰减          en="antenna5 sensor4 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor4_rx_attenuator           cn=天线5传感器4接收衰减          en="antenna5 sensor4 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor4_start_freq_tab_index    cn=天线5传感器4起始频率表索引    en="antenna5 sensor4 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=28900   invisible=0 
+    antenna5_sensor4_end_freq_tab_index      cn=天线5传感器4终止频率表索引    en="antenna5 sensor4 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna5_sensor4_slope_T                 cn=天线5传感器4斜率              en="antenna5 sensor4 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    antenna5_sensor5_offline                 cn=天线5传感器5不在线            en="antenna5 sensor5 offline"                   ot="xxxx"      min=0     max=1        unit=     default=0       invisible=0 
+    antenna5_sensor5_calibrate_T             cn=天线5传感器5校准温度          en="antenna5 sensor5 calibrate temperature"     ot="xxxx"      min=-5000 max=15000    unit=C    default=2000    invisible=0  
+    antenna5_sensor5_rtx_power_autoadjust    cn=天线5传感器5功率自动调节      en="antenna5 sensor5 rtx power autoadjust"      ot="xxxx"      min=0     max=1        unit=     default=1       invisible=0 
+    antenna5_sensor5_tx_attenuator           cn=天线5传感器5发送衰减          en="antenna5 sensor5 tx attenuator"             ot="xxxx"      min=0     max=41       unit=db   default=16      invisible=0 
+    antenna5_sensor5_rx_attenuator           cn=天线5传感器5接收衰减          en="antenna5 sensor5 rx attenuator"             ot="xxxx"      min=0     max=7        unit=     default=4       invisible=0 
+    antenna5_sensor5_start_freq_tab_index    cn=天线5传感器5起始频率表索引    en="antenna5 sensor5 start freq tab index"      ot="xxxx"      min=0     max=60000    unit=     default=31800   invisible=0 
+    antenna5_sensor5_end_freq_tab_index      cn=天线5传感器5终止频率表索引    en="antenna5 sensor5 end freq tab index"        ot="xxxx"      min=0     max=60000    unit=     default=34500   invisible=0 
+    antenna5_sensor5_slope_T                 cn=天线5传感器5斜率              en="antenna5 sensor5 slope"                     ot="xxxx"      min=1     max=100000   unit=     default=8000    invisible=0 
+    
+</SystemParameter>                                                            
+<Analog Num=180>                                                              
+    antenna0_sensor0_measure_T               cn=天线0传感器0温度              en="antenna0 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor0_measure_fft             cn=天线0传感器0fft值             en="antenna0 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor0_measure_dbm             cn=天线0传感器0db值              en="antenna0 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor0_measure_freq_tab_index  cn=天线0传感器0频率表索引        en="antenna0 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor0_status                  cn=天线0传感器0状态              en="antenna0 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor1_measure_T               cn=天线0传感器1温度              en="antenna0 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor1_measure_fft             cn=天线0传感器1fft值             en="antenna0 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor1_measure_dbm             cn=天线0传感器1db值              en="antenna0 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor1_measure_freq_tab_index  cn=天线0传感器1频率表索引        en="antenna0 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor1_status                  cn=天线0传感器1状态              en="antenna0 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor2_measure_T               cn=天线0传感器2温度              en="antenna0 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor2_measure_fft             cn=天线0传感器2fft值             en="antenna0 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor2_measure_dbm             cn=天线0传感器2db值              en="antenna0 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor2_measure_freq_tab_index  cn=天线0传感器2频率表索引        en="antenna0 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor2_status                  cn=天线0传感器2状态              en="antenna0 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor3_measure_T               cn=天线0传感器3温度              en="antenna0 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor3_measure_fft             cn=天线0传感器3fft值             en="antenna0 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor3_measure_dbm             cn=天线0传感器3db值              en="antenna0 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor3_measure_freq_tab_index  cn=天线0传感器3频率表索引        en="antenna0 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor3_status                  cn=天线0传感器3状态              en="antenna0 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor4_measure_T               cn=天线0传感器4温度              en="antenna0 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor4_measure_fft             cn=天线0传感器4fft值             en="antenna0 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor4_measure_dbm             cn=天线0传感器4db值              en="antenna0 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor4_measure_freq_tab_index  cn=天线0传感器4频率表索引        en="antenna0 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor4_status                  cn=天线0传感器4状态              en="antenna0 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor5_measure_T               cn=天线0传感器5温度              en="antenna0 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna0_sensor5_measure_fft             cn=天线0传感器5fft值             en="antenna0 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor5_measure_dbm             cn=天线0传感器5db值              en="antenna0 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna0_sensor5_measure_freq_tab_index  cn=天线0传感器5频率表索引        en="antenna0 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna0_sensor5_status                  cn=天线0传感器5状态              en="antenna0 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+                                                                              
+    antenna1_sensor0_measure_T               cn=天线1传感器0温度              en="antenna1 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor0_measure_fft             cn=天线1传感器0fft值             en="antenna1 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor0_measure_dbm             cn=天线1传感器0db值              en="antenna1 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor0_measure_freq_tab_index  cn=天线1传感器0频率表索引        en="antenna1 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor0_status                  cn=天线1传感器0状态              en="antenna1 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor1_measure_T               cn=天线1传感器1温度              en="antenna1 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor1_measure_fft             cn=天线1传感器1fft值             en="antenna1 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor1_measure_dbm             cn=天线1传感器1db值              en="antenna1 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor1_measure_freq_tab_index  cn=天线1传感器1频率表索引        en="antenna1 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor1_status                  cn=天线1传感器1状态              en="antenna1 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor2_measure_T               cn=天线1传感器2温度              en="antenna1 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor2_measure_fft             cn=天线1传感器2fft值             en="antenna1 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor2_measure_dbm             cn=天线1传感器2db值              en="antenna1 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor2_measure_freq_tab_index  cn=天线1传感器2频率表索引        en="antenna1 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor2_status                  cn=天线1传感器2状态              en="antenna1 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor3_measure_T               cn=天线1传感器3温度              en="antenna1 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor3_measure_fft             cn=天线1传感器3fft值             en="antenna1 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor3_measure_dbm             cn=天线1传感器3db值              en="antenna1 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor3_measure_freq_tab_index  cn=天线1传感器3频率表索引        en="antenna1 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor3_status                  cn=天线1传感器3状态              en="antenna1 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor4_measure_T               cn=天线1传感器4温度              en="antenna1 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor4_measure_fft             cn=天线1传感器4fft值             en="antenna1 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor4_measure_dbm             cn=天线1传感器4db值              en="antenna1 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor4_measure_freq_tab_index  cn=天线1传感器4频率表索引        en="antenna1 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor4_status                  cn=天线1传感器4状态              en="antenna1 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor5_measure_T               cn=天线1传感器5温度              en="antenna1 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna1_sensor5_measure_fft             cn=天线1传感器5fft值             en="antenna1 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor5_measure_dbm             cn=天线1传感器5db值              en="antenna1 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna1_sensor5_measure_freq_tab_index  cn=天线1传感器5频率表索引        en="antenna1 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna1_sensor5_status                  cn=天线1传感器5状态              en="antenna1 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+                                                                              
+    antenna2_sensor0_measure_T               cn=天线2传感器0温度              en="antenna2 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor0_measure_fft             cn=天线2传感器0fft值             en="antenna2 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor0_measure_dbm             cn=天线2传感器0db值              en="antenna2 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor0_measure_freq_tab_index  cn=天线2传感器0频率表索引        en="antenna2 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor0_status                  cn=天线2传感器0状态              en="antenna2 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor1_measure_T               cn=天线2传感器1温度              en="antenna2 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor1_measure_fft             cn=天线2传感器1fft值             en="antenna2 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor1_measure_dbm             cn=天线2传感器1db值              en="antenna2 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor1_measure_freq_tab_index  cn=天线2传感器1频率表索引        en="antenna2 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor1_status                  cn=天线2传感器1状态              en="antenna2 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor2_measure_T               cn=天线2传感器2温度              en="antenna2 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor2_measure_fft             cn=天线2传感器2fft值             en="antenna2 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor2_measure_dbm             cn=天线2传感器2db值              en="antenna2 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor2_measure_freq_tab_index  cn=天线2传感器2频率表索引        en="antenna2 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor2_status                  cn=天线2传感器2状态              en="antenna2 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor3_measure_T               cn=天线2传感器3温度              en="antenna2 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor3_measure_fft             cn=天线2传感器3fft值             en="antenna2 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor3_measure_dbm             cn=天线2传感器3db值              en="antenna2 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor3_measure_freq_tab_index  cn=天线2传感器3频率表索引        en="antenna2 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor3_status                  cn=天线2传感器3状态              en="antenna2 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor4_measure_T               cn=天线2传感器4温度              en="antenna2 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor4_measure_fft             cn=天线2传感器4fft值             en="antenna2 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor4_measure_dbm             cn=天线2传感器4db值              en="antenna2 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor4_measure_freq_tab_index  cn=天线2传感器4频率表索引        en="antenna2 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor4_status                  cn=天线2传感器4状态              en="antenna2 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor5_measure_T               cn=天线2传感器5温度              en="antenna2 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna2_sensor5_measure_fft             cn=天线2传感器5fft值             en="antenna2 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor5_measure_dbm             cn=天线2传感器5db值              en="antenna2 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna2_sensor5_measure_freq_tab_index  cn=天线2传感器5频率表索引        en="antenna2 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna2_sensor5_status                  cn=天线2传感器5状态              en="antenna2 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+                                                                              
+    antenna3_sensor0_measure_T               cn=天线3传感器0温度              en="antenna3 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor0_measure_fft             cn=天线3传感器0fft值             en="antenna3 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor0_measure_dbm             cn=天线3传感器0db值              en="antenna3 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor0_measure_freq_tab_index  cn=天线3传感器0频率表索引        en="antenna3 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor0_status                  cn=天线3传感器0状态              en="antenna3 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor1_measure_T               cn=天线3传感器1温度              en="antenna3 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor1_measure_fft             cn=天线3传感器1fft值             en="antenna3 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor1_measure_dbm             cn=天线3传感器1db值              en="antenna3 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor1_measure_freq_tab_index  cn=天线3传感器1频率表索引        en="antenna3 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor1_status                  cn=天线3传感器1状态              en="antenna3 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor2_measure_T               cn=天线3传感器2温度              en="antenna3 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor2_measure_fft             cn=天线3传感器2fft值             en="antenna3 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor2_measure_dbm             cn=天线3传感器2db值              en="antenna3 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor2_measure_freq_tab_index  cn=天线3传感器2频率表索引        en="antenna3 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor2_status                  cn=天线3传感器2状态              en="antenna3 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor3_measure_T               cn=天线3传感器3温度              en="antenna3 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor3_measure_fft             cn=天线3传感器3fft值             en="antenna3 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor3_measure_dbm             cn=天线3传感器3db值              en="antenna3 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor3_measure_freq_tab_index  cn=天线3传感器3频率表索引        en="antenna3 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor3_status                  cn=天线3传感器3状态              en="antenna3 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor4_measure_T               cn=天线3传感器4温度              en="antenna3 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor4_measure_fft             cn=天线3传感器4fft值             en="antenna3 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor4_measure_dbm             cn=天线3传感器4db值              en="antenna3 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor4_measure_freq_tab_index  cn=天线3传感器4频率表索引        en="antenna3 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor4_status                  cn=天线3传感器4状态              en="antenna3 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor5_measure_T               cn=天线3传感器5温度              en="antenna3 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna3_sensor5_measure_fft             cn=天线3传感器5fft值             en="antenna3 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor5_measure_dbm             cn=天线3传感器5db值              en="antenna3 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna3_sensor5_measure_freq_tab_index  cn=天线3传感器5频率表索引        en="antenna3 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna3_sensor5_status                  cn=天线3传感器5状态              en="antenna3 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+
+    antenna4_sensor0_measure_T               cn=天线4传感器0温度              en="antenna4 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor0_measure_fft             cn=天线4传感器0fft值             en="antenna4 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor0_measure_dbm             cn=天线4传感器0db值              en="antenna4 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor0_measure_freq_tab_index  cn=天线4传感器0频率表索引        en="antenna4 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor0_status                  cn=天线4传感器0状态              en="antenna4 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor1_measure_T               cn=天线4传感器1温度              en="antenna4 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor1_measure_fft             cn=天线4传感器1fft值             en="antenna4 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor1_measure_dbm             cn=天线4传感器1db值              en="antenna4 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor1_measure_freq_tab_index  cn=天线4传感器1频率表索引        en="antenna4 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor1_status                  cn=天线4传感器1状态              en="antenna4 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor2_measure_T               cn=天线4传感器2温度              en="antenna4 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor2_measure_fft             cn=天线4传感器2fft值             en="antenna4 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor2_measure_dbm             cn=天线4传感器2db值              en="antenna4 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor2_measure_freq_tab_index  cn=天线4传感器2频率表索引        en="antenna4 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor2_status                  cn=天线4传感器2状态              en="antenna4 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor3_measure_T               cn=天线4传感器3温度              en="antenna4 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor3_measure_fft             cn=天线4传感器3fft值             en="antenna4 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor3_measure_dbm             cn=天线4传感器3db值              en="antenna4 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor3_measure_freq_tab_index  cn=天线4传感器3频率表索引        en="antenna4 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor3_status                  cn=天线4传感器3状态              en="antenna4 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor4_measure_T               cn=天线4传感器4温度              en="antenna4 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor4_measure_fft             cn=天线4传感器4fft值             en="antenna4 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor4_measure_dbm             cn=天线4传感器4db值              en="antenna4 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor4_measure_freq_tab_index  cn=天线4传感器4频率表索引        en="antenna4 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor4_status                  cn=天线4传感器4状态              en="antenna4 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor5_measure_T               cn=天线4传感器5温度              en="antenna4 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna4_sensor5_measure_fft             cn=天线4传感器5fft值             en="antenna4 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor5_measure_dbm             cn=天线4传感器5db值              en="antenna4 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna4_sensor5_measure_freq_tab_index  cn=天线4传感器5频率表索引        en="antenna4 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna4_sensor5_status                  cn=天线4传感器5状态              en="antenna4 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+
+    antenna5_sensor0_measure_T               cn=天线5传感器0温度              en="antenna5 sensor0 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor0_measure_fft             cn=天线5传感器0fft值             en="antenna5 sensor0 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor0_measure_dbm             cn=天线5传感器0db值              en="antenna5 sensor0 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor0_measure_freq_tab_index  cn=天线5传感器0频率表索引        en="antenna5 sensor0 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor0_status                  cn=天线5传感器0状态              en="antenna5 sensor0 status"             ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor1_measure_T               cn=天线5传感器1温度              en="antenna5 sensor1 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor1_measure_fft             cn=天线5传感器1fft值             en="antenna5 sensor1 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor1_measure_dbm             cn=天线5传感器1db值              en="antenna5 sensor1 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor1_measure_freq_tab_index  cn=天线5传感器1频率表索引        en="antenna5 sensor1 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor1_status                  cn=天线5传感器1状态              en="antenna5 sensor1 status"             ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor2_measure_T               cn=天线5传感器2温度              en="antenna5 sensor2 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor2_measure_fft             cn=天线5传感器2fft值             en="antenna5 sensor2 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor2_measure_dbm             cn=天线5传感器2db值              en="antenna5 sensor2 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor2_measure_freq_tab_index  cn=天线5传感器2频率表索引        en="antenna5 sensor2 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor2_status                  cn=天线5传感器2状态              en="antenna5 sensor2 status"             ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor3_measure_T               cn=天线5传感器3温度              en="antenna5 sensor3 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor3_measure_fft             cn=天线5传感器3fft值             en="antenna5 sensor3 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor3_measure_dbm             cn=天线5传感器3db值              en="antenna5 sensor3 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor3_measure_freq_tab_index  cn=天线5传感器3频率表索引        en="antenna5 sensor3 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor3_status                  cn=天线5传感器3状态              en="antenna5 sensor3 status"             ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor4_measure_T               cn=天线5传感器4温度              en="antenna5 sensor4 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor4_measure_fft             cn=天线5传感器4fft值             en="antenna5 sensor4 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor4_measure_dbm             cn=天线5传感器4db值              en="antenna5 sensor4 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor4_measure_freq_tab_index  cn=天线5传感器4频率表索引        en="antenna5 sensor4 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor4_status                  cn=天线5传感器4状态              en="antenna5 sensor4 status"             ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor5_measure_T               cn=天线5传感器5温度              en="antenna5 sensor5 temperature"        ot="xxxx"     unit=C     invisible=0 
+    antenna5_sensor5_measure_fft             cn=天线5传感器5fft值             en="antenna5 sensor5 fft"                ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor5_measure_dbm             cn=天线5传感器5db值              en="antenna5 sensor5 dbm"                ot="xxxx"     unit=db    invisible=0 
+    antenna5_sensor5_measure_freq_tab_index  cn=天线5传感器5频率表索引        en="antenna5 sensor5 freq tab index"     ot="xxxx"     unit=      invisible=0 
+    antenna5_sensor5_status                  cn=天线5传感器5状态              en="antenna5 sensor5 status"             ot="xxxx"     unit=      invisible=0 
+    
+</Analog>
+<SelfDiagnose Num=47>
+    system_running_status          cn=系统运行状态                en="System running status"             ot="xxxx"     unit=        invisible=0 
+    system_run_time_seconds        cn=系统运行时间                en="System run time"                   ot="xxxx"     unit=s       invisible=0 
+    task0_max_run_time             cn=Task0最大运行时间           en="Task0 maximum run time"            ot="xxxx"     unit=us      invisible=0 
+    task0_run_time                 cn=Task0实时运行时间           en="Task0 run time"                    ot="xxxx"     unit=us      invisible=0 
+    task1_max_run_time             cn=Task1最大运行时间           en="Task1 maximum run time"            ot="xxxx"     unit=us      invisible=0 
+    task1_run_time                 cn=Task1实时运行时间           en="Task1 run time"                    ot="xxxx"     unit=us      invisible=0 
+    task1_interrupt_count          cn=Task1中断计数               en="Task1 interrupt count"             ot="xxxx"     unit=        invisible=0 
+    uart2_max_run_time             cn=串口0服务最大运行时间       en="Uart0 service maximum run time"    ot="xxxx"     unit=us      invisible=0 
+    uart2_run_time                 cn=串口0服务运行时间           en="Uart0 service run time"            ot="xxxx"     unit=us      invisible=0 
+    uart4_max_run_time             cn=串口1服务最大运行时间       en="Uart1 service maximum run time"    ot="xxxx"     unit=us      invisible=0 
+    uart4_run_time                 cn=串口1服务运行时间           en="Uart1 service run time"            ot="xxxx"     unit=us      invisible=0 
+    
+    antenna0_sensor0_rx_attenuator    cn=天线0传感器0接收衰减     en="Antenna0 sensor0 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor0_tx_attenuator    cn=天线0传感器0发送衰减     en="Antenna0 sensor0 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor1_rx_attenuator    cn=天线0传感器1接收衰减     en="Antenna0 sensor1 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor1_tx_attenuator    cn=天线0传感器1发送衰减     en="Antenna0 sensor1 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor2_rx_attenuator    cn=天线0传感器2接收衰减     en="Antenna0 sensor2 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor2_tx_attenuator    cn=天线0传感器2发送衰减     en="Antenna0 sensor2 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor3_rx_attenuator    cn=天线0传感器3接收衰减     en="Antenna0 sensor3 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor3_tx_attenuator    cn=天线0传感器3发送衰减     en="Antenna0 sensor3 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor4_rx_attenuator    cn=天线0传感器4接收衰减     en="Antenna0 sensor4 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor4_tx_attenuator    cn=天线0传感器4发送衰减     en="Antenna0 sensor4 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor5_rx_attenuator    cn=天线0传感器5接收衰减     en="Antenna0 sensor5 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna0_sensor5_tx_attenuator    cn=天线0传感器5发送衰减     en="Antenna0 sensor5 tx attenuator"    ot="xxxx"     unit=        invisible=0
+    
+    antenna1_sensor0_rx_attenuator    cn=天线1传感器0接收衰减     en="Antenna1 sensor0 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor0_tx_attenuator    cn=天线1传感器0发送衰减     en="Antenna1 sensor0 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor1_rx_attenuator    cn=天线1传感器1接收衰减     en="Antenna1 sensor1 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor1_tx_attenuator    cn=天线1传感器1发送衰减     en="Antenna1 sensor1 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor2_rx_attenuator    cn=天线1传感器2接收衰减     en="Antenna1 sensor2 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor2_tx_attenuator    cn=天线1传感器2发送衰减     en="Antenna1 sensor2 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor3_rx_attenuator    cn=天线1传感器3接收衰减     en="Antenna1 sensor3 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor3_tx_attenuator    cn=天线1传感器3发送衰减     en="Antenna1 sensor3 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor4_rx_attenuator    cn=天线1传感器4接收衰减     en="Antenna1 sensor4 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor4_tx_attenuator    cn=天线1传感器4发送衰减     en="Antenna1 sensor4 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor5_rx_attenuator    cn=天线1传感器5接收衰减     en="Antenna1 sensor5 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna1_sensor5_tx_attenuator    cn=天线1传感器5发送衰减     en="Antenna1 sensor5 tx attenuator"    ot="xxxx"     unit=        invisible=0
+    
+    antenna2_sensor0_rx_attenuator    cn=天线2传感器0接收衰减     en="Antenna2 sensor0 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor0_tx_attenuator    cn=天线2传感器0发送衰减     en="Antenna2 sensor0 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor1_rx_attenuator    cn=天线2传感器1接收衰减     en="Antenna2 sensor1 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor1_tx_attenuator    cn=天线2传感器1发送衰减     en="Antenna2 sensor1 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor2_rx_attenuator    cn=天线2传感器2接收衰减     en="Antenna2 sensor2 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor2_tx_attenuator    cn=天线2传感器2发送衰减     en="Antenna2 sensor2 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor3_rx_attenuator    cn=天线2传感器3接收衰减     en="Antenna2 sensor3 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor3_tx_attenuator    cn=天线2传感器3发送衰减     en="Antenna2 sensor3 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor4_rx_attenuator    cn=天线2传感器4接收衰减     en="Antenna2 sensor4 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor4_tx_attenuator    cn=天线2传感器4发送衰减     en="Antenna2 sensor4 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor5_rx_attenuator    cn=天线2传感器5接收衰减     en="Antenna2 sensor5 rx attenuator"    ot="xxxx"     unit=        invisible=0 
+    antenna2_sensor5_tx_attenuator    cn=天线2传感器5发送衰减     en="Antenna2 sensor5 tx attenuator"    ot="xxxx"     unit=        invisible=0 
+
+</SelfDiagnose>
