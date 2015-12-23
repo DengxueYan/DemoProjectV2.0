@@ -9,7 +9,6 @@
 .\build\userapp.o: applications\Debug.h
 .\build\userapp.o: applications\stdio.h
 .\build\userapp.o: applications\UserApp.h
-.\build\userapp.o: applications\DataProcess.h
 .\build\userapp.o: applications\Uart.h
 .\build\userapp.o: applications\STM32F40xRegister.h
 .\build\userapp.o: applications\TaskServices.h

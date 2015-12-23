@@ -13,4 +13,3 @@
 .\build\signalout.o: applications\SignalOut.h
 .\build\signalout.o: applications\BaseData.h
 .\build\signalout.o: applications\UserApp.h
-.\build\signalout.o: applications\DataProcess.h

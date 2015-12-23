@@ -9,4 +9,3 @@
 .\build\setting.o: applications\BaseData.h
 .\build\setting.o: applications\Uart.h
 .\build\setting.o: applications\UserApp.h
-.\build\setting.o: applications\DataProcess.h

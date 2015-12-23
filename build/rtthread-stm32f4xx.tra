@@ -8,10 +8,10 @@
 ### List of Objects: adding '".\build\stm32f4xx_flash.o"'
 ### List of Objects: adding '".\mic\SystemCommon.lib"'
 ### List of Objects: adding '".\mic\UserApp.lib"'
-### List of Objects: adding '".\build\dataprocess.o"'
 ### List of Objects: adding '".\build\userapp.o"'
+### List of Objects: adding '".\build\display.o"'
 ### ADS-LD Command completed:
---cpu Cortex-M4.fp ".\build\main.o" ".\build\setting.o" ".\build\signalout.o" ".\build\app.o" ".\build\stm32f4xx_flash.o" Y:\DemoProjectV2.0\mic\SystemCommon.lib Y:\DemoProjectV2.0\mic\UserApp.lib ".\build\dataprocess.o" ".\build\userapp.o" 
+--cpu Cortex-M4.fp ".\build\main.o" ".\build\setting.o" ".\build\signalout.o" ".\build\app.o" ".\build\stm32f4xx_flash.o" C:\home\Github\DemoProjectV2.0\mic\SystemCommon.lib C:\home\Github\DemoProjectV2.0\mic\UserApp.lib ".\build\userapp.o" ".\build\display.o" 
 --nodebug --strict --scatter ".\build\rtthread-stm32f4xx.sct" 
 --inline .\mic\Debug.lib  .\mic\IconvData.lib  --remove .\mic\sstream.L --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info veneers 
@@ -19,7 +19,7 @@
 ### ADS-LD Output File: '.\build\rtthread-stm32f4xx.axf'
 ### ADS-LD Command File: '.\build\rtthread-stm32f4xx.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\rtthread-stm32f4xx.lnp', Handle=0x00000274
+### Creating CmdFile '.\build\rtthread-stm32f4xx.lnp', Handle=0x0000032C
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\rtthread-stm32f4xx.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
