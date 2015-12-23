@@ -1358,70 +1358,70 @@ Image Symbol Table
     .conststring                             0x0807e34d   Section        6  Iconv.o(.conststring)
     .conststring                             0x0807e353   Section     1047  Command.o(.conststring)
     .conststring                             0x0807e76a   Section       50  IconvData.o(.conststring)
-    c$$dinf                                  0x0807e7cc   Section        8  fpconst.o(c$$dinf)
-    locale$$data                             0x0807e7d4   Section      272  lc_ctype_c.o(locale$$data)
-    __lcctype_c_name                         0x0807e7d8   Data           2  lc_ctype_c.o(locale$$data)
-    __lcctype_c_start                        0x0807e7e0   Data           0  lc_ctype_c.o(locale$$data)
-    locale$$data                             0x0807e8e4   Section       28  lc_numeric_c.o(locale$$data)
-    __lcctype_c_end                          0x0807e8e4   Data           0  lc_ctype_c.o(locale$$data)
-    __lcnum_c_name                           0x0807e8e8   Data           2  lc_numeric_c.o(locale$$data)
-    __lcnum_c_start                          0x0807e8f0   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_point                          0x0807e8fc   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_thousands                      0x0807e8fe   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_grouping                       0x0807e8ff   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_end                            0x0807e900   Data           0  lc_numeric_c.o(locale$$data)
-    .data                                    0x20000000   Section        1  userapp.o(.data)
-    feed_watchdog_count                      0x20000000   Data           1  userapp.o(.data)
-    .data                                    0x20000004   Section       16  display.o(.data)
-    display_run_first_time_finish            0x20000004   Data           1  display.o(.data)
-    display_flash_toggle                     0x20000005   Data           1  display.o(.data)
-    display_iterant_count                    0x20000008   Data           4  display.o(.data)
-    display_scroll_count                     0x2000000c   Data           4  display.o(.data)
-    display_flash_count                      0x20000010   Data           4  display.o(.data)
-    .data                                    0x20000014   Section        1  SystemBase.o(.data)
-    .data                                    0x20000018   Section       24  SystemBase.o(.data)
-    system_timer_last_value                  0x20000020   Data           4  SystemBase.o(.data)
-    system_ms_last_value                     0x20000024   Data           4  SystemBase.o(.data)
-    .data                                    0x20000030   Section        1  TaskServices.o(.data)
-    .data                                    0x20000034   Section       40  TaskServices.o(.data)
-    task1_interrupt_lock                     0x20000037   Data           1  TaskServices.o(.data)
-    task2_interrupt_lock                     0x20000038   Data           1  TaskServices.o(.data)
-    low_level_interrupt_disable              0x20000039   Data           1  TaskServices.o(.data)
-    .data                                    0x2000005c   Section       16  Uart.o(.data)
-    .data                                    0x2000006c   Section        1  SettingManage.o(.data)
-    setting_op_flag                          0x2000006c   Data           1  SettingManage.o(.data)
-    .data                                    0x20000070   Section        8  SingalOutManage.o(.data)
-    .data                                    0x20000078   Section        8  SingalOutManage.o(.data)
-    .data                                    0x20000080   Section        8  SingalOutManage.o(.data)
-    .data                                    0x20000088   Section        8  SingalOutManage.o(.data)
-    .data                                    0x20000090   Section        8  SingalOutManage.o(.data)
-    .data                                    0x20000098   Section        2  Storage.o(.data)
-    flash_op_flag                            0x20000098   Data           1  Storage.o(.data)
-    feed_watchdog_count_local                0x20000099   Data           1  Storage.o(.data)
-    .data                                    0x2000009c   Section       16  Iconv.o(.data)
-    Ucs4Encode                               0x2000009c   Data           4  Iconv.o(.data)
-    .data                                    0x200000ac   Section        8  Hmi.o(.data)
-    command_length                           0x200000b0   Data           4  Hmi.o(.data)
-    .data                                    0x200000b4   Section        4  sstream.o(.data)
-    .data                                    0x200000b8   Section        4  heapauxa.o(.data)
-    __rt_heap_escrow_base                    0x200000b8   Data           4  heapauxa.o(.data)
-    .data                                    0x200000bc   Section       20  system_stm32f4xx.o(.data)
-    .bss                                     0x200000d0   Section       16  display.o(.bss)
-    leds                                     0x200000d0   Data          16  display.o(.bss)
-    .bss                                     0x200000e0   Section     1024  SystemBase.o(.bss)
-    .bss                                     0x200004e0   Section     3200  Uart.o(.bss)
-    .bss                                     0x20001160   Section       36  SettingManage.o(.bss)
-    .bss                                     0x20001184   Section     1536  Hmi.o(.bss)
-    command_buffer_history                   0x20001384   Data         512  Hmi.o(.bss)
-    command_buffer                           0x20001584   Data         512  Hmi.o(.bss)
-    .bss                                     0x20001784   Section       96  libspace.o(.bss)
-    STACK                                    0x200017e8   Section     8192  startup_stm32f4xx.o(STACK)
-    Stack_Mem                                0x200017e8   Data        8192  startup_stm32f4xx.o(STACK)
-    __initial_sp                             0x200037e8   Data           0  startup_stm32f4xx.o(STACK)
-    .bss                                     0x68000000   Section    165890  Command.o(.bss)
-    public_tx_buffer                         0x68028000   Data        2050  Command.o(.bss)
-    HEAP                                     0x68028808   Section    786432  startup_stm32f4xx.o(HEAP)
-    Heap_Mem                                 0x68028808   Data       786432  startup_stm32f4xx.o(HEAP)
+    c$$dinf                                  0x0807e7bc   Section        8  fpconst.o(c$$dinf)
+    locale$$data                             0x0807e7c4   Section      272  lc_ctype_c.o(locale$$data)
+    __lcctype_c_name                         0x0807e7c8   Data           2  lc_ctype_c.o(locale$$data)
+    __lcctype_c_start                        0x0807e7d0   Data           0  lc_ctype_c.o(locale$$data)
+    locale$$data                             0x0807e8d4   Section       28  lc_numeric_c.o(locale$$data)
+    __lcctype_c_end                          0x0807e8d4   Data           0  lc_ctype_c.o(locale$$data)
+    __lcnum_c_name                           0x0807e8d8   Data           2  lc_numeric_c.o(locale$$data)
+    __lcnum_c_start                          0x0807e8e0   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_point                          0x0807e8ec   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_thousands                      0x0807e8ee   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_grouping                       0x0807e8ef   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_end                            0x0807e8f0   Data           0  lc_numeric_c.o(locale$$data)
+    .data                                    0x68000000   Section        1  userapp.o(.data)
+    feed_watchdog_count                      0x68000000   Data           1  userapp.o(.data)
+    .data                                    0x68000004   Section       16  display.o(.data)
+    display_run_first_time_finish            0x68000004   Data           1  display.o(.data)
+    display_flash_toggle                     0x68000005   Data           1  display.o(.data)
+    display_iterant_count                    0x68000008   Data           4  display.o(.data)
+    display_scroll_count                     0x6800000c   Data           4  display.o(.data)
+    display_flash_count                      0x68000010   Data           4  display.o(.data)
+    .data                                    0x68000014   Section        1  SystemBase.o(.data)
+    .data                                    0x68000018   Section       24  SystemBase.o(.data)
+    system_timer_last_value                  0x68000020   Data           4  SystemBase.o(.data)
+    system_ms_last_value                     0x68000024   Data           4  SystemBase.o(.data)
+    .data                                    0x68000030   Section        1  TaskServices.o(.data)
+    .data                                    0x68000034   Section       40  TaskServices.o(.data)
+    task1_interrupt_lock                     0x68000037   Data           1  TaskServices.o(.data)
+    task2_interrupt_lock                     0x68000038   Data           1  TaskServices.o(.data)
+    low_level_interrupt_disable              0x68000039   Data           1  TaskServices.o(.data)
+    .data                                    0x6800005c   Section       16  Uart.o(.data)
+    .data                                    0x6800006c   Section        1  SettingManage.o(.data)
+    setting_op_flag                          0x6800006c   Data           1  SettingManage.o(.data)
+    .data                                    0x68000070   Section        8  SingalOutManage.o(.data)
+    .data                                    0x68000078   Section        8  SingalOutManage.o(.data)
+    .data                                    0x68000080   Section        8  SingalOutManage.o(.data)
+    .data                                    0x68000088   Section        8  SingalOutManage.o(.data)
+    .data                                    0x68000090   Section        8  SingalOutManage.o(.data)
+    .data                                    0x68000098   Section        2  Storage.o(.data)
+    flash_op_flag                            0x68000098   Data           1  Storage.o(.data)
+    feed_watchdog_count_local                0x68000099   Data           1  Storage.o(.data)
+    .data                                    0x6800009c   Section       16  Iconv.o(.data)
+    Ucs4Encode                               0x6800009c   Data           4  Iconv.o(.data)
+    .data                                    0x680000ac   Section        8  Hmi.o(.data)
+    command_length                           0x680000b0   Data           4  Hmi.o(.data)
+    .data                                    0x680000b4   Section        4  sstream.o(.data)
+    .data                                    0x680000b8   Section        4  heapauxa.o(.data)
+    __rt_heap_escrow_base                    0x680000b8   Data           4  heapauxa.o(.data)
+    .data                                    0x680000bc   Section       20  system_stm32f4xx.o(.data)
+    .bss                                     0x680000d0   Section       16  display.o(.bss)
+    leds                                     0x680000d0   Data          16  display.o(.bss)
+    .bss                                     0x680000e0   Section     1024  SystemBase.o(.bss)
+    .bss                                     0x680004e0   Section     3200  Uart.o(.bss)
+    .bss                                     0x68001160   Section       36  SettingManage.o(.bss)
+    .bss                                     0x68001184   Section     1536  Hmi.o(.bss)
+    command_buffer_history                   0x68001384   Data         512  Hmi.o(.bss)
+    command_buffer                           0x68001584   Data         512  Hmi.o(.bss)
+    .bss                                     0x68001784   Section    264194  Command.o(.bss)
+    public_tx_buffer                         0x68041784   Data        2050  Command.o(.bss)
+    .bss                                     0x68041f88   Section       96  libspace.o(.bss)
+    HEAP                                     0x68041fe8   Section    524288  startup_stm32f4xx.o(HEAP)
+    Heap_Mem                                 0x68041fe8   Data       524288  startup_stm32f4xx.o(HEAP)
+    STACK                                    0x680c1fe8   Section     8192  startup_stm32f4xx.o(STACK)
+    Stack_Mem                                0x680c1fe8   Data        8192  startup_stm32f4xx.o(STACK)
+    __initial_sp                             0x680c3fe8   Data           0  startup_stm32f4xx.o(STACK)
 
     Global Symbols
 
@@ -1885,53 +1885,53 @@ Image Symbol Table
     const_default_crc_tab                    0x0802f634   Data         512  SystemBase.o(.constdata)
     logo_smartsaw                            0x080701a1   Data        9600  Hardware.o(.constdata)
     Region$$Table$$Base                      0x0807e79c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0807e7cc   Number         0  anon$$obj.o(Region$$Table)
-    __aeabi_HUGE_VAL                         0x0807e7cc   Data           0  fpconst.o(c$$dinf)
-    __aeabi_HUGE_VALL                        0x0807e7cc   Data           0  fpconst.o(c$$dinf)
-    __aeabi_INFINITY                         0x0807e7cc   Data           0  fpconst.o(c$$dinf)
-    __dInf                                   0x0807e7cc   Data           0  fpconst.o(c$$dinf)
-    __huge_val                               0x0807e7cc   Data           0  fpconst.o(c$$dinf)
-    __ctype                                  0x0807e7e1   Data           0  lc_ctype_c.o(locale$$data)
-    system_running_status                    0x20000014   Data           1  SystemBase.o(.data)
-    system_ms_count                          0x20000018   Data           4  SystemBase.o(.data)
-    system_s_count                           0x2000001c   Data           4  SystemBase.o(.data)
-    sys_cfg                                  0x20000028   Data           8  SystemBase.o(.data)
-    cpu_poweron_initial_flag                 0x20000030   Data           1  TaskServices.o(.data)
-    task1_service_request_no                 0x20000034   Data           1  TaskServices.o(.data)
-    task2_service_request_no                 0x20000035   Data           1  TaskServices.o(.data)
-    system_running_status_disp               0x20000036   Data           1  TaskServices.o(.data)
-    task1_interrupt_count                    0x2000003a   Data           2  TaskServices.o(.data)
-    task2_interrupt_count                    0x2000003c   Data           2  TaskServices.o(.data)
-    system_s_count_disp                      0x20000040   Data           4  TaskServices.o(.data)
-    task0_max_run_time                       0x20000044   Data           4  TaskServices.o(.data)
-    task1_max_run_time                       0x20000048   Data           4  TaskServices.o(.data)
-    task2_run_time                           0x2000004c   Data           4  TaskServices.o(.data)
-    task0_run_time                           0x20000050   Data           4  TaskServices.o(.data)
-    task1_run_time                           0x20000054   Data           4  TaskServices.o(.data)
-    task2_max_run_time                       0x20000058   Data           4  TaskServices.o(.data)
-    uart2_max_run_time                       0x2000005c   Data           4  Uart.o(.data)
-    uart2_run_time                           0x20000060   Data           4  Uart.o(.data)
-    uart4_max_run_time                       0x20000064   Data           4  Uart.o(.data)
-    uart4_run_time                           0x20000068   Data           4  Uart.o(.data)
-    analog_group                             0x20000070   Data           8  SingalOutManage.o(.data)
-    self_diagnose_group                      0x20000078   Data           8  SingalOutManage.o(.data)
-    self_diagnose_bin_group                  0x20000080   Data           8  SingalOutManage.o(.data)
-    bin_input_group                          0x20000088   Data           8  SingalOutManage.o(.data)
-    bin_output_group                         0x20000090   Data           8  SingalOutManage.o(.data)
-    encode_type_str                          0x200000a0   Data          12  Iconv.o(.data)
-    debug_rx_buffer_rd_ptr                   0x200000ac   Data           2  Hmi.o(.data)
-    debug_rx_buffer_wr_ptr                   0x200000ae   Data           2  Hmi.o(.data)
-    __stdout                                 0x200000b4   Data           4  sstream.o(.data)
-    SystemCoreClock                          0x200000bc   Data           4  system_stm32f4xx.o(.data)
-    AHBPrescTable                            0x200000c0   Data          16  system_stm32f4xx.o(.data)
-    buffer_public                            0x200000e0   Data        1024  SystemBase.o(.bss)
-    uart2                                    0x200004e0   Data        1600  Uart.o(.bss)
-    uart4                                    0x20000b20   Data        1600  Uart.o(.bss)
-    setting_system                           0x20001160   Data          36  SettingManage.o(.bss)
-    debug_rx_buffer                          0x20001184   Data         512  Hmi.o(.bss)
-    __libspace_start                         0x20001784   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x200017e4   Data           0  libspace.o(.bss)
-    local_buffer                             0x68000000   Data       163840  Command.o(.bss)
+    Region$$Table$$Limit                     0x0807e7bc   Number         0  anon$$obj.o(Region$$Table)
+    __aeabi_HUGE_VAL                         0x0807e7bc   Data           0  fpconst.o(c$$dinf)
+    __aeabi_HUGE_VALL                        0x0807e7bc   Data           0  fpconst.o(c$$dinf)
+    __aeabi_INFINITY                         0x0807e7bc   Data           0  fpconst.o(c$$dinf)
+    __dInf                                   0x0807e7bc   Data           0  fpconst.o(c$$dinf)
+    __huge_val                               0x0807e7bc   Data           0  fpconst.o(c$$dinf)
+    __ctype                                  0x0807e7d1   Data           0  lc_ctype_c.o(locale$$data)
+    system_running_status                    0x68000014   Data           1  SystemBase.o(.data)
+    system_ms_count                          0x68000018   Data           4  SystemBase.o(.data)
+    system_s_count                           0x6800001c   Data           4  SystemBase.o(.data)
+    sys_cfg                                  0x68000028   Data           8  SystemBase.o(.data)
+    cpu_poweron_initial_flag                 0x68000030   Data           1  TaskServices.o(.data)
+    task1_service_request_no                 0x68000034   Data           1  TaskServices.o(.data)
+    task2_service_request_no                 0x68000035   Data           1  TaskServices.o(.data)
+    system_running_status_disp               0x68000036   Data           1  TaskServices.o(.data)
+    task1_interrupt_count                    0x6800003a   Data           2  TaskServices.o(.data)
+    task2_interrupt_count                    0x6800003c   Data           2  TaskServices.o(.data)
+    system_s_count_disp                      0x68000040   Data           4  TaskServices.o(.data)
+    task0_max_run_time                       0x68000044   Data           4  TaskServices.o(.data)
+    task1_max_run_time                       0x68000048   Data           4  TaskServices.o(.data)
+    task2_run_time                           0x6800004c   Data           4  TaskServices.o(.data)
+    task0_run_time                           0x68000050   Data           4  TaskServices.o(.data)
+    task1_run_time                           0x68000054   Data           4  TaskServices.o(.data)
+    task2_max_run_time                       0x68000058   Data           4  TaskServices.o(.data)
+    uart2_max_run_time                       0x6800005c   Data           4  Uart.o(.data)
+    uart2_run_time                           0x68000060   Data           4  Uart.o(.data)
+    uart4_max_run_time                       0x68000064   Data           4  Uart.o(.data)
+    uart4_run_time                           0x68000068   Data           4  Uart.o(.data)
+    analog_group                             0x68000070   Data           8  SingalOutManage.o(.data)
+    self_diagnose_group                      0x68000078   Data           8  SingalOutManage.o(.data)
+    self_diagnose_bin_group                  0x68000080   Data           8  SingalOutManage.o(.data)
+    bin_input_group                          0x68000088   Data           8  SingalOutManage.o(.data)
+    bin_output_group                         0x68000090   Data           8  SingalOutManage.o(.data)
+    encode_type_str                          0x680000a0   Data          12  Iconv.o(.data)
+    debug_rx_buffer_rd_ptr                   0x680000ac   Data           2  Hmi.o(.data)
+    debug_rx_buffer_wr_ptr                   0x680000ae   Data           2  Hmi.o(.data)
+    __stdout                                 0x680000b4   Data           4  sstream.o(.data)
+    SystemCoreClock                          0x680000bc   Data           4  system_stm32f4xx.o(.data)
+    AHBPrescTable                            0x680000c0   Data          16  system_stm32f4xx.o(.data)
+    buffer_public                            0x680000e0   Data        1024  SystemBase.o(.bss)
+    uart2                                    0x680004e0   Data        1600  Uart.o(.bss)
+    uart4                                    0x68000b20   Data        1600  Uart.o(.bss)
+    setting_system                           0x68001160   Data          36  SettingManage.o(.bss)
+    debug_rx_buffer                          0x68001184   Data         512  Hmi.o(.bss)
+    local_buffer                             0x68001784   Data       262144  Command.o(.bss)
+    __libspace_start                         0x68041f88   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x68041fe8   Data           0  libspace.o(.bss)
 
 
 
@@ -1941,9 +1941,9 @@ Memory Map of the image
 
   Image Entry point : 0x08020189
 
-  Load Region LR_IROM1 (Base: 0x08020000, Size: 0x0005e9d0, Max: 0x000a0000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08020000, Size: 0x0005e9c0, Max: 0x000a0000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08020000, Size: 0x0005e900, Max: 0x000a0000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08020000, Size: 0x0005e8f0, Max: 0x000a0000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2192,57 +2192,55 @@ Memory Map of the image
     0x0807e34d   0x00000006   Data   RO           70    .conststring        Debug.lib(Iconv.o)
     0x0807e353   0x00000417   Data   RO           82    .conststring        Debug.lib(Command.o)
     0x0807e76a   0x00000032   Data   RO           87    .conststring        IconvData.lib(IconvData.o)
-    0x0807e79c   0x00000030   Data   RO          459    Region$$Table       anon$$obj.o
-    0x0807e7cc   0x00000008   Data   RO          400    c$$dinf             fz_wm.l(fpconst.o)
-    0x0807e7d4   0x00000110   Data   RO          324    locale$$data        c_w.l(lc_ctype_c.o)
-    0x0807e8e4   0x0000001c   Data   RO          326    locale$$data        c_w.l(lc_numeric_c.o)
+    0x0807e79c   0x00000020   Data   RO          459    Region$$Table       anon$$obj.o
+    0x0807e7bc   0x00000008   Data   RO          400    c$$dinf             fz_wm.l(fpconst.o)
+    0x0807e7c4   0x00000110   Data   RO          324    locale$$data        c_w.l(lc_ctype_c.o)
+    0x0807e8d4   0x0000001c   Data   RO          326    locale$$data        c_w.l(lc_numeric_c.o)
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000037e8, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000000, Max: 0x00020000, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20000000   0x00000001   Data   RW           25    .data               userapp.o
-    0x20000001   0x00000003   PAD
-    0x20000004   0x00000010   Data   RW           28    .data               display.o
-    0x20000014   0x00000001   Data   RW           33    .data               SystemCommon.lib(SystemBase.o)
-    0x20000015   0x00000003   PAD
-    0x20000018   0x00000018   Data   RW           34    .data               SystemCommon.lib(SystemBase.o)
-    0x20000030   0x00000001   Data   RW           36    .data               UserApp.lib(TaskServices.o)
-    0x20000031   0x00000003   PAD
-    0x20000034   0x00000028   Data   RW           37    .data               UserApp.lib(TaskServices.o)
-    0x2000005c   0x00000010   Data   RW           41    .data               UserApp.lib(Uart.o)
-    0x2000006c   0x00000001   Data   RW           52    .data               SystemCommon.lib(SettingManage.o)
-    0x2000006d   0x00000003   PAD
-    0x20000070   0x00000008   Data   RW           53    .data               SystemCommon.lib(SingalOutManage.o)
-    0x20000078   0x00000008   Data   RW           54    .data               SystemCommon.lib(SingalOutManage.o)
-    0x20000080   0x00000008   Data   RW           55    .data               SystemCommon.lib(SingalOutManage.o)
-    0x20000088   0x00000008   Data   RW           56    .data               SystemCommon.lib(SingalOutManage.o)
-    0x20000090   0x00000008   Data   RW           57    .data               SystemCommon.lib(SingalOutManage.o)
-    0x20000098   0x00000002   Data   RW           62    .data               UserApp.lib(Storage.o)
-    0x2000009a   0x00000002   PAD
-    0x2000009c   0x00000010   Data   RW           71    .data               Debug.lib(Iconv.o)
-    0x200000ac   0x00000008   Data   RW           74    .data               sstream.L(Hmi.o)
-    0x200000b4   0x00000004   Data   RW          193    .data               sstream.L(sstream.o)
-    0x200000b8   0x00000004   Data   RW          335    .data               c_w.l(heapauxa.o)
-    0x200000bc   0x00000014   Data   RW          413    .data               Debug.lib(system_stm32f4xx.o)
-    0x200000d0   0x00000010   Zero   RW           27    .bss                display.o
-    0x200000e0   0x00000400   Zero   RW           30    .bss                SystemCommon.lib(SystemBase.o)
-    0x200004e0   0x00000c80   Zero   RW           39    .bss                UserApp.lib(Uart.o)
-    0x20001160   0x00000024   Zero   RW           50    .bss                SystemCommon.lib(SettingManage.o)
-    0x20001184   0x00000600   Zero   RW           73    .bss                sstream.L(Hmi.o)
-    0x20001784   0x00000060   Zero   RW          275    .bss                c_w.l(libspace.o)
-    0x200017e4   0x00000004   PAD
-    0x200017e8   0x00002000   Zero   RW          373    STACK               Debug.lib(startup_stm32f4xx.o)
+    **** No section assigned to this execution region ****
 
 
-    Execution Region RW_RAM1 (Base: 0x68000000, Size: 0x000e8808, Max: 0x00100000, ABSOLUTE)
+    Execution Region RW_RAM1 (Base: 0x68000000, Size: 0x000c3fe8, Max: 0x00100000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x68000000   0x00028802   Zero   RW           78    .bss                Debug.lib(Command.o)
-    0x68028802   0x00000006   PAD
-    0x68028808   0x000c0000   Zero   RW          374    HEAP                Debug.lib(startup_stm32f4xx.o)
+    0x68000000   0x00000001   Data   RW           25    .data               userapp.o
+    0x68000001   0x00000003   PAD
+    0x68000004   0x00000010   Data   RW           28    .data               display.o
+    0x68000014   0x00000001   Data   RW           33    .data               SystemCommon.lib(SystemBase.o)
+    0x68000015   0x00000003   PAD
+    0x68000018   0x00000018   Data   RW           34    .data               SystemCommon.lib(SystemBase.o)
+    0x68000030   0x00000001   Data   RW           36    .data               UserApp.lib(TaskServices.o)
+    0x68000031   0x00000003   PAD
+    0x68000034   0x00000028   Data   RW           37    .data               UserApp.lib(TaskServices.o)
+    0x6800005c   0x00000010   Data   RW           41    .data               UserApp.lib(Uart.o)
+    0x6800006c   0x00000001   Data   RW           52    .data               SystemCommon.lib(SettingManage.o)
+    0x6800006d   0x00000003   PAD
+    0x68000070   0x00000008   Data   RW           53    .data               SystemCommon.lib(SingalOutManage.o)
+    0x68000078   0x00000008   Data   RW           54    .data               SystemCommon.lib(SingalOutManage.o)
+    0x68000080   0x00000008   Data   RW           55    .data               SystemCommon.lib(SingalOutManage.o)
+    0x68000088   0x00000008   Data   RW           56    .data               SystemCommon.lib(SingalOutManage.o)
+    0x68000090   0x00000008   Data   RW           57    .data               SystemCommon.lib(SingalOutManage.o)
+    0x68000098   0x00000002   Data   RW           62    .data               UserApp.lib(Storage.o)
+    0x6800009a   0x00000002   PAD
+    0x6800009c   0x00000010   Data   RW           71    .data               Debug.lib(Iconv.o)
+    0x680000ac   0x00000008   Data   RW           74    .data               sstream.L(Hmi.o)
+    0x680000b4   0x00000004   Data   RW          193    .data               sstream.L(sstream.o)
+    0x680000b8   0x00000004   Data   RW          335    .data               c_w.l(heapauxa.o)
+    0x680000bc   0x00000014   Data   RW          413    .data               Debug.lib(system_stm32f4xx.o)
+    0x680000d0   0x00000010   Zero   RW           27    .bss                display.o
+    0x680000e0   0x00000400   Zero   RW           30    .bss                SystemCommon.lib(SystemBase.o)
+    0x680004e0   0x00000c80   Zero   RW           39    .bss                UserApp.lib(Uart.o)
+    0x68001160   0x00000024   Zero   RW           50    .bss                SystemCommon.lib(SettingManage.o)
+    0x68001184   0x00000600   Zero   RW           73    .bss                sstream.L(Hmi.o)
+    0x68001784   0x00040802   Zero   RW           78    .bss                Debug.lib(Command.o)
+    0x68041f86   0x00000002   PAD
+    0x68041f88   0x00000060   Zero   RW          275    .bss                c_w.l(libspace.o)
+    0x68041fe8   0x00080000   Zero   RW          374    HEAP                Debug.lib(startup_stm32f4xx.o)
+    0x680c1fe8   0x00002000   Zero   RW          373    STACK               Debug.lib(startup_stm32f4xx.o)
 
 
 ==============================================================================
@@ -2261,20 +2259,20 @@ Image component sizes
         92         14          0          1          0          0   userapp.o
 
     ----------------------------------------------------------------------
-      2648        388        864         20         16          0   Object Totals
-         0          0         48          0          0          0   (incl. Generated)
+      2648        388        848         20         16          0   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
          0          0          0          3          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
 
-     15068       4198       3721          0     165890          0   Command.o
+     15068       4198       3721          0     264194          0   Command.o
         76          4          0          0          0          0   Debug.o
        852        344         23         16          0          0   Iconv.o
        492         70          0          0          0          0   Spi.o
        984        252          0          0          0          0   SpiFlash.o
-        64         26        392          0     794624          0   startup_stm32f4xx.o
+        64         26        392          0     532480          0   startup_stm32f4xx.o
        620        156          0         20          0          0   system_stm32f4xx.o
        948        170      44078          0          0          0   Gb2312.o
         72          4         98          0          0          0   IconvData.o
@@ -2411,14 +2409,14 @@ Image component sizes
         10          0          0          4          0          0   sstream.o
 
     ----------------------------------------------------------------------
-     59616      12892     324200        188     966416          0   Library Totals
-        36          2         10         11         10          0   (incl. Padding)
+     59616      12892     324200        188     802568          0   Library Totals
+        36          2         10         11          2          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-     18156       5050       4136         36     960514          0   Debug.lib
+     18156       5050       4136         36     796674          0   Debug.lib
       1916        210      44869          0          0          0   IconvData.lib
      13792       4774       1294         66       1060          0   SystemCommon.lib
      13040       2266     273378         59       3200          0   UserApp.lib
@@ -2428,7 +2426,7 @@ Image component sizes
        922        106          0         12       1536          0   sstream.L
 
     ----------------------------------------------------------------------
-     59616      12892     324200        188     966416          0   Library Totals
+     59616      12892     324200        188     802568          0   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -2437,15 +2435,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     62264      13280     325064        208     966432          0   Grand Totals
-     62264      13280     325064        208     966432          0   ELF Image Totals
-     62264      13280     325064        208          0          0   ROM Totals
+     62264      13280     325048        208     802584          0   Grand Totals
+     62264      13280     325048        208     802584          0   ELF Image Totals
+     62264      13280     325048        208          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               387328 ( 378.25kB)
-    Total RW  Size (RW Data + ZI Data)            966640 ( 943.98kB)
-    Total ROM Size (Code + RO Data + RW Data)     387536 ( 378.45kB)
+    Total RO  Size (Code + RO Data)               387312 ( 378.23kB)
+    Total RW  Size (RW Data + ZI Data)            802792 ( 783.98kB)
+    Total ROM Size (Code + RO Data + RW Data)     387520 ( 378.44kB)
 
 ==============================================================================
 
