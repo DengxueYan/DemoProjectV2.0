@@ -228,7 +228,7 @@
             <Ro3Chk>0</Ro3Chk>
             <Ir1Chk>1</Ir1Chk>
             <Ir2Chk>0</Ir2Chk>
-            <Ra1Chk>0</Ra1Chk>
+            <Ra1Chk>1</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
             <Im1Chk>1</Im1Chk>
@@ -297,7 +297,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8020000</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0xa0000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -306,8 +306,8 @@
               </OCR_RVCT5>
               <OCR_RVCT6>
                 <Type>0</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <StartAddress>0x68000000</StartAddress>
+                <Size>0x100000</Size>
               </OCR_RVCT6>
               <OCR_RVCT7>
                 <Type>0</Type>
@@ -326,8 +326,8 @@
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x10000000</StartAddress>
-                <Size>0x10000</Size>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
               </OCR_RVCT10>
             </OnChipMemories>
             <RvctStartVector></RvctStartVector>
@@ -370,7 +370,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>0</umfTarg>
+            <umfTarg>1</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -483,19 +483,14 @@
               <FilePath>.\mic\UserApp.lib</FilePath>
             </File>
             <File>
-              <FileName>DataProcess.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\DataProcess.c</FilePath>
-            </File>
-            <File>
               <FileName>UserApp.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\UserApp.c</FilePath>
             </File>
             <File>
-              <FileName>Uart.c</FileName>
+              <FileName>Display.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\applications\Uart.c</FilePath>
+              <FilePath>.\applications\Display.c</FilePath>
             </File>
           </Files>
         </Group>
