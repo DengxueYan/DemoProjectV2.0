@@ -50,6 +50,7 @@
 //====================================================================================================
 // Local variables, these variables can not be accessed outside
 //====================================================================================================
+static Uint8  setting_change_flag;
 
 //====================================================================================================
 // Functions realize
@@ -68,6 +69,13 @@
 //----------------------------------------------------------------------------------------------------
 int32 NewUserApp(void)
 {
+    if (NORMAL_SUCCESS != NewUart())
+    {
+        DebugPrintf("Uart create failed!\r\n");
+        return NORMAL_ERROR;
+    }
+    DebugPrintf("Uart create successfully!\r\n");
+
     return NORMAL_SUCCESS;
 }
 
@@ -82,6 +90,13 @@ int32 NewUserApp(void)
 //----------------------------------------------------------------------------------------------------
 int32 UserAppInitial(void)
 {
+    if (NORMAL_SUCCESS != UARTInitial())
+    {
+        DebugPrintf("Uart initial failed!\r\n");
+        return NORMAL_ERROR;
+    }
+    DebugPrintf("Uart initial successfully!\r\n");
+
     return NORMAL_SUCCESS;
 }
 
@@ -116,6 +131,14 @@ void SystemReboot(void)
 //----------------------------------------------------------------------------------------------------
 int32 UserAppSettingHandle(void *addr, int32 set_num)
 {
+    if (NORMAL_SUCCESS != UARTSettingHandle())
+    {
+        DebugPrintf("Uart settings handle error!\r\n");
+        return NORMAL_ERROR;
+    }
+
+    setting_change_flag = 1;
+
     return NORMAL_SUCCESS;
 }
 
@@ -144,6 +167,14 @@ void UpdateUserRunningSetting(void)
 void UserAppTask0Service(void)
 {
 
+    if (0 != setting_change_flag)
+    {
+        setting_change_flag = 0;
+        UpdateUserRunningSetting();
+    }
+
+    UartTask0Service();
+    DisplayTask0Service();
 }
 
 //----------------------------------------------------------------------------------------------------
