@@ -2141,7 +2141,7 @@ extern VUint32 system_ms_count;
 extern VUint32 system_s_count;
 
 extern Uint16 const const_default_crc_tab[256u];
-extern Uint8 buffer_public[BUFFER_PUBLIC_LENGTH];
+extern Uint8 *buffer_public;
 extern SYSTEM_CFG   sys_cfg;
 
 //====================================================================================================
@@ -2177,6 +2177,9 @@ extern int32 GetContentOfKeyword(int8 const *key_word, int8 const *src, int8 *bu
 extern char const *GetContentToEndStr(char const *src, char const *end_str, char *buffer, int32 buffer_lentgh);
 extern void FeedWatchdog(void);
 extern void SystemReboot(void);
+extern void *MallocLowSpeedMem(int32 const length);
+extern void *CallocLowSpeedMem(Uint32 nitems, Uint32 size);
+extern void FreeLowSpeedMem(void *addr);
 
 
 #ifdef __cplusplus

@@ -68,19 +68,16 @@ extern "C" {
 #define DEBUG_RX_BUF_MASK         (DEBUG_RX_BUF_SIZE - 1u)// 串口接收缓存长度MASK
 #define DEBUG_RX_BUF_ADDR(addr)   ((Uint16)((addr) & (DEBUG_RX_BUF_MASK)))// 串口接收缓存长度有效寻址
 
-#define HmiService rt_console
-
 //====================================================================================================
 // 外部接口变量
 //====================================================================================================
 extern VUint16 debug_rx_buffer_rd_ptr;
 extern VUint16 debug_rx_buffer_wr_ptr;
-extern int8    debug_rx_buffer[DEBUG_RX_BUF_SIZE];
+extern int8 const *debug_rx_buffer;
 
 //====================================================================================================
 // 外部函数声明
 //====================================================================================================
-extern int32 rt_send_byte(int8 byte);
 extern int32 DebugSendByte(int8 byte);
 extern int32 DebugSendByteWithDelay(int8 byte, Uint32 delay_us);
 extern void HmiService(void);

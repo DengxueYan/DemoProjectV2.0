@@ -78,13 +78,13 @@ typedef struct UART_DEF
     VUint16 rx_buffer_wr_ptr;
     VUint16 rx_buffer_rd_ptr;
     Uint32  rx_timeout_ms;
-    int8    rx_buffer[UART_RX_BUF_SIZE];
-    int8    tx_buffer[UART_TX_BUF_SIZE];
+    int8    *rx_buffer;
+    int8    *tx_buffer;
 
     Uint16  rx_frame_length;
     Uint16  tx_frame_length;
-    Uint8   rx_frame_buffer[UART_FRAME_BUFFER_SIZE];
-    Uint8   tx_frame_buffer[UART_FRAME_BUFFER_SIZE];
+    Uint8   *rx_frame_buffer;
+    Uint8   *tx_frame_buffer;
     Uint32  temp[8];
 
 } UART_DEF;
