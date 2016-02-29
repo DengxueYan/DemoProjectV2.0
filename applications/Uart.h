@@ -98,6 +98,9 @@ extern Uint32 uart2_run_time;
 extern UART_DEF uart4;
 extern Uint32 uart4_max_run_time;
 extern Uint32 uart4_run_time;
+extern UART_DEF uart6;
+extern Uint32 uart6_max_run_time;
+extern Uint32 uart6_run_time;
 
 //====================================================================================================
 // Interface functions

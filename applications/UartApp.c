@@ -33,9 +33,9 @@
 //----------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------
 //   Function: IEC103FrameProcess
-//      Input: void
+//      Input: UART_DEF *p_uart
 //     Output: void
-//     Return: int32: function status
+//     Return: void
 //Description: IEC103 frame process
 //    <AUTHOR>        <MODIFYTIME>            <REASON>
 //   Dengxue Yan    2011-03-21 16:30           Create
@@ -49,7 +49,7 @@ void IEC103FrameProcess(UART_DEF *p_uart)
 //   Function: UartDefaultFrameProcess
 //      Input: void
 //     Output: void
-//     Return: int32: function status
+//     Return: void
 //Description: Uart Default frame process
 //    <AUTHOR>        <MODIFYTIME>            <REASON>
 //   Dengxue Yan    2011-03-21 16:30           Create
@@ -68,4 +68,19 @@ void UartDefaultFrameProcess(UART_DEF *p_uart)
         DebugPrintf("\r\n");
     }
     
+}
+
+
+//----------------------------------------------------------------------------------------------------
+//   Function: UART6HardwareIntial
+//      Input: UART_DEF *p_uart
+//     Output: void
+//     Return: int32: function status
+//Description: Uart6 hardware initial
+//    <AUTHOR>        <MODIFYTIME>            <REASON>
+//   Dengxue Yan    2016-02-28 16:30           Create
+//----------------------------------------------------------------------------------------------------
+int32 UART6HardwareIntial(UART_DEF *p_uart)
+{
+    return NORMAL_SUCCESS;
 }

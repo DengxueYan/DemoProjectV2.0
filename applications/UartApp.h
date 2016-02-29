@@ -26,8 +26,9 @@ extern "C" {
 //====================================================================================================
 // Interface functions
 //====================================================================================================
-void IEC103FrameProcess(UART_DEF *p_uart);
-void UartDefaultFrameProcess(UART_DEF *p_uart);
+extern void IEC103FrameProcess(UART_DEF *p_uart);
+extern void UartDefaultFrameProcess(UART_DEF *p_uart);
+extern int32 UART6HardwareIntial(UART_DEF *p_uart);
 
 #ifdef __cplusplus
 }

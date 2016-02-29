@@ -39,6 +39,14 @@ SIGNAL_DEFINE const setting_system_define[] =
     {"uart4_stop_bits",                 &uart4.stop_bits,                     SIGNAL_DATA_TYPE_uc},
     {"uart4_rx_timeout_ms",             &uart4.rx_timeout_ms,                 SIGNAL_DATA_TYPE_ul},
     {"uart4_comm_mode",                 &uart4.comm_mode,                     SIGNAL_DATA_TYPE_uc},
+
+    {"uart6_comm_protocol",             &uart6.comm_protocol,                 SIGNAL_DATA_TYPE_uc},
+    {"uart6_comm_addr",                 &uart6.comm_addr,                     SIGNAL_DATA_TYPE_ui},
+    {"uart6_baud_rate",                 &uart6.baud_rate,                     SIGNAL_DATA_TYPE_uc},
+    {"uart6_parity",                    &uart6.parity,                        SIGNAL_DATA_TYPE_uc},
+    {"uart6_stop_bits",                 &uart6.stop_bits,                     SIGNAL_DATA_TYPE_uc},
+    {"uart6_rx_timeout_ms",             &uart6.rx_timeout_ms,                 SIGNAL_DATA_TYPE_ul},
+    {"uart6_comm_mode",                 &uart4.comm_mode,                     SIGNAL_DATA_TYPE_uc},
 };
 
 int32 const setting_system_define_num = sizeof(setting_system_define) / sizeof(setting_system_define[0]);

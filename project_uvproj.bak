@@ -522,6 +522,11 @@
               <FileType>1</FileType>
               <FilePath>.\applications\Display.c</FilePath>
             </File>
+            <File>
+              <FileName>UartApp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\UartApp.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

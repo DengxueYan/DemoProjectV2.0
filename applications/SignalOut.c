@@ -45,6 +45,8 @@ SIGNAL_DEFINE const self_diagnose_define[] =
     {"uart2_run_time",          &uart2_run_time,                 SIGNAL_DATA_TYPE_ul},
     {"uart4_max_run_time",      &uart4_max_run_time,             SIGNAL_DATA_TYPE_ul},
     {"uart4_run_time",          &uart4_run_time,                 SIGNAL_DATA_TYPE_ul},
+    {"uart6_max_run_time",      &uart6_max_run_time,             SIGNAL_DATA_TYPE_ul},
+    {"uart6_run_time",          &uart6_run_time,                 SIGNAL_DATA_TYPE_ul},
 
 };
 
