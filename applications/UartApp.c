@@ -67,7 +67,6 @@ void UartDefaultFrameProcess(UART_DEF *p_uart)
         }
         DebugPrintf("\r\n");
     }
-    
 }
 
 
