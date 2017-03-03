@@ -1,5 +1,0 @@
---cpu Cortex-M4.fp ".\build\main.o" ".\build\setting.o" ".\build\signalout.o" ".\build\app.o" ".\build\stm32f4xx_flash.o" C:\home\Github\STM32F407DemoProjectV2.0\mic\SystemCommon.lib C:\home\Github\STM32F407DemoProjectV2.0\mic\UserApp.lib ".\build\userapp.o" ".\build\display.o" ".\build\uartapp.o" ".\build\systemstartlogo.o" 
---nodebug --strict --scatter ".\build\rtthread-stm32f4xx.sct" 
---inline .\mic\Debug.lib  .\mic\IconvData.lib  --remove .\mic\sstream.L --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info veneers 
- --list ".\build\rtthread-stm32f4xx.map" -o .\build\rtthread-stm32f4xx.axf

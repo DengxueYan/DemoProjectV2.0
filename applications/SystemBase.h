@@ -2147,6 +2147,7 @@ extern SYSTEM_CFG   sys_cfg;
 //====================================================================================================
 // 外部函数声明
 //====================================================================================================
+extern int32 SystemBaseInitial(void);
 extern
 int32 FpgaSlaveSerialOutput(   Uint8 const *fpga_grogram, Uint32 fpga_program_lenth
                              , VUint32 *fpga_init_b_addr, Uint32 fpga_init_b_mask
@@ -2177,6 +2178,7 @@ extern int32 GetContentOfKeyword(int8 const *key_word, int8 const *src, int8 *bu
 extern char const *GetContentToEndStr(char const *src, char const *end_str, char *buffer, int32 buffer_lentgh);
 extern void FeedWatchdog(void);
 extern void SystemReboot(void);
+extern int32 MallocLowSpeedMemInitial(Uint32 const mem_start_addr, int32 const mem_length);
 extern void *MallocLowSpeedMem(int32 const length);
 extern void *CallocLowSpeedMem(Uint32 nitems, Uint32 size);
 extern void FreeLowSpeedMem(void *addr);

@@ -1,9 +1,0 @@
-.\build\stm32f4xx_flash.o: applications\stm32f4xx_flash.c
-.\build\stm32f4xx_flash.o: applications\stm32f4xx_flash.h
-.\build\stm32f4xx_flash.o: applications\stm32f4xx.h
-.\build\stm32f4xx_flash.o: C:\usr\bin\Keil\ARM\CMSIS\Include\core_cm4.h
-.\build\stm32f4xx_flash.o: C:\usr\bin\Keil\ARM\ARMCC\bin\..\include\stdint.h
-.\build\stm32f4xx_flash.o: C:\usr\bin\Keil\ARM\CMSIS\Include\core_cmInstr.h
-.\build\stm32f4xx_flash.o: C:\usr\bin\Keil\ARM\CMSIS\Include\core_cmFunc.h
-.\build\stm32f4xx_flash.o: C:\usr\bin\Keil\ARM\CMSIS\Include\core_cm4_simd.h
-.\build\stm32f4xx_flash.o: applications\system_stm32f4xx.h

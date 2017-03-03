@@ -502,6 +502,31 @@
               <FileType>1</FileType>
               <FilePath>.\applications\SystemStartLogo.c</FilePath>
             </File>
+            <File>
+              <FileName>Hardware.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\Hardware.c</FilePath>
+            </File>
+            <File>
+              <FileName>Startup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\Startup.c</FilePath>
+            </File>
+            <File>
+              <FileName>Modbus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\Modbus.c</FilePath>
+            </File>
+            <File>
+              <FileName>SettingManage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\SettingManage.c</FilePath>
+            </File>
+            <File>
+              <FileName>Storage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\Storage.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
