@@ -7,4 +7,3 @@ This is a DEMO project for STM32F407:
     c. External 1M memory is at address 0x68000000 which is FSMC bank 1 NOR/PSRAM 3
     d. SPI flash localte at SPI1
     d. Support Devcfg.bin download and parse
-
